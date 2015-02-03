@@ -71,8 +71,9 @@
 /*Main image*/
 
 .jumbotron {
-  background-image: url("../Images/subatomic-whirlygig.png");
-  height:auto;
+  background-image: url("../Images/Il_Ciacolon_Banner.png");
+  height:400px;
+  width:auto;
   background-size: cover;
 }
 
@@ -94,10 +95,15 @@
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-/*Activities in the main page*/
+#MainPage {
+  background-color: #090274;
+  border-bottom:1px solid #dbdbdb;
+}
 
+/*Activities in the main page*/
 .activities {
-  background-color: #f7f7f7;
+  color:white;
+  background-color: #090274;
   border-bottom:1px solid #dbdbdb;
 }
 
@@ -111,7 +117,6 @@
 }
 
 .activities a {
-  color:black;
   font: 100 45px 'JennaSue', sans-serif;
 }
 
@@ -385,6 +390,147 @@ color: green !important;}
 .nav{
 	 margin-top:15px;
 	 margin-bottom:8px;
+}
+
+/*Circular menu*/
+.circular-menu {
+    position:absolute;
+    top:50%;/*middle of the screen*/
+    left: 50%;/*middle of the screen*/
+    width: 600px;/*size of the circle*/
+    height: 600px;/*size of the circle*/
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.circle {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+.circular-list {
+    list-style:none;
+}
+.open.circle {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.circle a {
+    position: absolute;
+    z-index: 20;
+    font-family:'JennaSue';
+    font-size: 30px;
+    color: #000000;
+    display: block;
+    height: 30%;
+    width: 30%;
+    line-height: 40px;
+    margin-left: -15%;/* to center the image horizontally*/
+    margin-top: -3.5%;/*to center the image vertically*/
+    position: absolute;
+    text-align: center;
+}
+.circle a:hover {
+    color: #000000;
+    font-style:underlined;
+}
+
+.menu-button {
+    top: 50%;
+    left: 50%;
+    font-family: 'JennaSue';
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    z-index:15;
+}
+
+.menu-button img {
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.open.menu-button {
+   -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.placement{
+    position:absolute;
+    top: 80%;
+    left: 50%;
+}
+
+.bienvenuti_message{
+	font-family: 'JennaSue';
+	font-size: 3em;
+	position: relative;
+	color: #090274;
+	top: 30%;
+	width: 289px;
+	left: -40px;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+}
+
+.disappear.bienvenuti_message
+{
+	opacity: 0;
+}
+
+
+/* Sticky footer */
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	background:#090274;
+	width:100%;
+	height:60px;
+}
+#content {
+	padding:10px;
+	padding-bottom:60px;   /* Height of the footer element */
+}
+#footer {
+	width:100%;
+	height:60px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:#090274;
 }
 
 /*Zoom for map*/
