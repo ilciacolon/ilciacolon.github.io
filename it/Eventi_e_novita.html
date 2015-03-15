@@ -22,7 +22,37 @@
   ga('require', 'linkid', 'linkid.js');
   ga('send', 'pageview');
 </script>
+<script> /* Hover over image and show text */
+   $(document)ready(function(){
+       $(".pdf-thumb-box").hover(function() {
 
+       var imgWidth = $(this).children("img").width();
+       var imgHeight = $(this).children("img").height();
+       var negImgWidth = imgWidth - imgWidth - imgWidth;
+
+       $(this).children(".pdf-thumb-box-overlay").fadeTo(0, 0.8);
+
+       $(this).css("width", (imgWidth)+"px");
+       $(this).css("height", (imgHeight)+"px");
+
+
+       $(this).children(".pdf-thumb-box-overlay").css("left", negImgWidth+"px");
+       $(this).children(".pdf-thumb-box-overlay").css("visibility", "visible");
+
+       $(this).children(".pdf-thumb-box-overlay").animate({"left": 0}, 250);
+
+   }, function() {
+
+       var imgWidth = $(this).children("img").width();
+       var imgHeight = $(this).children("img").height();
+       var negImgWidth = imgWidth - imgWidth - imgWidth;
+
+       $(this).children(".pdf-thumb-box-overlay").animate({"left": negImgWidth}, 250);
+
+   });
+   });
+
+</script>
 </head>
 
   <body>
@@ -69,6 +99,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
       <div class="event-slideshow">
       <iframe style="margin-top:20px" src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AovzHudzxH0GdFdSaVVBeTdmbnBnN19FZlRfQ2VmYnc&font=Bevan-PotanoSans&maptype=toner&lang=it&height=650' width='100%' height='650' frameborder='0'></iframe>
       </div>
+      
+       <div class="row">
+          <div class="col-md-4">
+            <div class="pdf-thumb-box">
+               <div class="pdf-thumb-box-overlay">
+                <a href="#2013-Katalog">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                </a>
+             </div> 
+                <img  class="img-responsive" src="http://i.imgur.com/Cn1ev16.jpg" alt="2013 Genel Katalog" width="100%">
+
+            </div>
+
+          </div>
+        </div>
     </div>
     
   <!--<div class ="calendar" align="center">

@@ -451,17 +451,19 @@ color: green !important;}
 }
 .open.circle {
     opacity: 1;
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    transform: scale(1.3);
 }
 .circle a {
     position: absolute;
     z-index: 20;
     font-family:'HomemadeApple';
     font-weight: 100;
-    font-size: 1.2em;
-    color: #000000;
+    font-size: 1.5em;
+    /*color: #000000;*/
+    color: white;
+    text-shadow: -1px 0 #090274, 0 1px #090274, 1px 0 #090274, 0 -1px #090274;
     height: 30%;
     width: 30%;
     margin-left: -15%;/* to center the image horizontally*/
@@ -528,7 +530,8 @@ color: green !important;}
 	font-weight: 100;
         font-size: 2em;
 	position: relative;
-	color: #090274;
+	color: white;
+	text-shadow: -0.4px 0 #090274, 0 0.4px #090274, 0.4px 0 #090274, 0 -0.4px #090274;
 	top: 30%;
 	width: 289px;
 	left: -40px;
@@ -607,6 +610,53 @@ p.info_menu
   margin-bottom: 2em;
   font-size:15px;
 }
+
+/*Images behind opening menu*/
+ 
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:50%;
+  left:0;
+  width:100%;
+  text-align:center;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 1;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+   dispaly: inline-block;
+  height: 700px;
+  max-width:auto;
+  
+}
+
+.carousel-inner>.item {
+	 -webkit-transition: 0.9s ease-in-out left;
+	 -moz-transition: 0.9s ease-in-out left;
+	 -o-transition: 0.9s ease-in-out left;
+	 transition: 0.9s ease-in-out left;
+}
+.carousel img {
+  dispaly: inline-block;
+  height: 700px;
+  max-width:auto;
+  
+}
+
+
 /* Sticky footer */
 html,
 body {
@@ -660,9 +710,8 @@ body {
 
 #content {
 	height:auto;
-        margin-top: 80px;
 	width:100%;
-	padding:10px;
+	padding-top:40px;
 	padding-bottom:40px;   /* Height of the footer element */
 }
 #footer {
@@ -680,3 +729,4 @@ body {
 #mapContainer #mapControls { position: relative; left: 80px; top: -229px; width: 29px; }
 #mapContainer #mapControls #up { background: url(../Images/iconUp.png) no-repeat center top; display: block; height: 26px; width: 29px; }
 #mapContainer #mapControls #down { background: url(../Images/iconDown.png) no-repeat center top; display: block; height: 27px; width: 29px; }
+
