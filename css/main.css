@@ -383,13 +383,308 @@ color: green !important;}
 .flag.flag-gb {background-position: -25px -15px}
 .flag.flag-it {background-position: -50px -15px}
 
-.nav{
-	 margin-top:15px;
-	 margin-bottom:8px;
+<<<<<<< HEAD
+
+/*Circular menu*/
+.circular-menu {
+    position:absolute;
+    top:50%;/*middle of the screen*/
+    left: 50%;/*middle of the screen*/
+    width: 600px;/*size of the circle*/
+    height: 600px;/*size of the circle*/
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.circle {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+.circular-list {
+    list-style:none;
+}
+.open.circle {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.circle a {
+    position: absolute;
+    z-index: 20;
+    font-family:'HomemadeApple';
+    font-weight: 100;
+    font-size: 1.5em;
+    /*color: #000000;*/
+    color: white;
+    text-shadow: -1px 0 #090274, 0 1px #090274, 1px 0 #090274, 0 -1px #090274;
+    height: 30%;
+    width: 30%;
+    margin-left: -15%;/* to center the image horizontally*/
+    margin-top: -3.5%;/*to center the image vertically*/
+    position: absolute;
+    text-align: center;
+    text-decoration:none;  /*takes out the underline when hovering*/
+}
+.circle a:hover {
+    color: red;
 }
 
-/*Zoom for map*/
-.grabbing { cursor: url(closedhand.cur), pointer !important; }
-#mapContainer #mapControls { position: relative; left: 80px; top: -229px; width: 29px; }
-#mapContainer #mapControls #up { background: url(../Images/iconUp.png) no-repeat center top; display: block; height: 26px; width: 29px; }
-#mapContainer #mapControls #down { background: url(../Images/iconDown.png) no-repeat center top; display: block; height: 27px; width: 29px; }
+.menu-button {
+    top: 50%;
+    left: 50%;
+    font-family: 'HomemadeApple';
+    font-weight: 100;
+    font-size: 1.5em;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    z-index:15;
+}
+
+.menu-button img {
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.open.menu-button {
+   -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.placement{
+    position:absolute;
+    top: 80%;
+    left:50%;
+}
+
+.placement2{
+    position:absolute;
+    top: 85%;
+    width: 100%;
+    left:50%;
+}
+
+#bienvenuti_message{
+	font-family: 'HomemadeApple';
+	font-weight: 100;
+        font-size: 2em;
+	position: relative;
+	color: white;
+	text-shadow: -0.4px 0 #090274, 0 0.4px #090274, 0.4px 0 #090274, 0 -0.4px #090274;
+	top: 30%;
+	width: 289px;
+	left: -40px;
+	opacity: 1;
+	-webkit-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+}
+
+.address_message
+{
+	color:#7f7bb8;/* #090274*/;
+	position: absolute;
+	text-align: right;
+	left:-50%;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition:all 2s ease;
+	transition: all 2s ease;
+}
+
+.phone_message
+{
+	color:#7f7bb8;/* #090274*/;
+	position: absolute;
+	text-align: left;
+	left:-0%;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition:all 2s ease;
+	transition: all 2s ease;
+}
+
+/* Calendar */
+
+.calendar
+{
+	position: static;
+	right:10px;
+}
+
+.event-slideshow
+{
+	position:static;
+
+}
+<<<<<<< HEAD
+
+/* Menu */
+.Menu
+{
+	position:relative;
+	width:500px;
+        height:auto;
+        top:50%;
+        left:50%;
+        margin:0 0 0 -250px;
+	border:1px solid #000;
+}
+
+p.menu_name
+{
+	font-family:HomemadeApple;
+	font-size:30px;
+        margin: 0em;
+	
+	
+}
+p.prezzo
+{
+	margin-top: -0.5em;
+	font-size:20px;
+}
+p.info_menu
+{
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size:15px;
+}
+
+/*Images behind opening menu*/
+ 
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:50%;
+  left:0;
+  width:100%;
+  text-align:center;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 1;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+   dispaly: inline-block;
+  height: 700px;
+  max-width:auto;
+  
+}
+
+.carousel-inner>.item {
+	 -webkit-transition: 0.9s ease-in-out left;
+	 -moz-transition: 0.9s ease-in-out left;
+	 -o-transition: 0.9s ease-in-out left;
+	 transition: 0.9s ease-in-out left;
+}
+.carousel img {
+  dispaly: inline-block;
+  height: 700px;
+  max-width:auto;
+  
+}
+
+
+=======
+>>>>>>> parent of 60f0c8a... Menu
+/* Sticky footer */
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	width: 100%;
+}
+#wrapper {
+	min-height:100%;
+	width:100%;
+	position:relative;
+	overflow-y: hidden;
+	overflow-x: hidden;
+
+}
+#header-main
+{	width:100%;
+	height:40px;
+	position:fixed;
+	background:#090274;
+	color:white;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 72px;
+  height:80px;
+  background:white;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  transition: all 0.4s ease;
+  margin: 0;
+  clear: both;
+  top: 0;
+    z-index:900;
+}
+
+#header-line
+{
+	position: fixed;
+	height:80px;
+	margin-left:10%;
+	width: 80%;
+	border-bottom:1px solid #090631;
+	  z-index:900;
+
+}
+
+#content {
+	height:auto;
+	width:100%;
+	padding-top:40px;
+	padding-bottom:40px;   /* Height of the footer element */
+}
+#footer {
+	width:100%;
+	height:40px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:#090274;
+	color:white;
+}
