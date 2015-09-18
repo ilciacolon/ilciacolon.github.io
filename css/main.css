@@ -32,11 +32,6 @@
 	src: url('../fonts/JennaSue-Regular.ttf') format('truetype');
 }
 
-@font-face {
-	font-family: 'HomemadeApple';
-	src: url('../fonts/HomemadeApple.ttf') format('truetype');
-}
-
 /*For mobile and tablets*/
 @media(min-device-width : 320px) {.thumbnail img { min-height:100px; height:100px;}
 .framepdf {width:100%; height:250px;}
@@ -60,32 +55,24 @@
 
 /*Navigator tab*/
 
-.nav{
-	width:100%;
-	height: 60px;
-	position: fixed;
-	z-index:999;
-  }
-.nav ul{
-    margin:-30px 60px;
-}
+
 .nav a {
-  color: #090274;
-  font-size: 13.5px;
-  font-weight:500;
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
   text-transform: uppercase;
 }
 
 .nav li {
-	display: inline;
+  display: inline;
 }
 
 /*Main image*/
 
 .jumbotron {
-  background-image: url("../Images/Il_Ciacolon_Banner.png");
-  height:400px;
-  width:auto;
+  background-image: url("../Images/subatomic-whirlygig.png");
+  height:auto;
   background-size: cover;
 }
 
@@ -107,38 +94,10 @@
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-.MainPage {
-  background-color: white; 
-  border-bottom:1px solid #dbdbdb;
-  font-family:'HomemadeApple';
-}
-
-.MainPage h1 {
-  font: 100 60px 'HomemadeApple';
-    color:#090274;
-
-}
-
-.MainPage h2 {
-  font: 100 45px 'HomemadeApple', 
-}
-
-.MainPage h3 {
-  font: 100 30px 'HomemadeApple', 
-}
-
-.MainPage p {
-  font: 100 17px 'EB Garamond', Helvetica, sans-serif;
-}
-
-.MainPage a {
-  font: 100 45px 'HomemadeApple', sans-serif;
-}
-
 /*Activities in the main page*/
+
 .activities {
-  color:white;
-  background-color: #090274;
+  background-color: #f7f7f7;
   border-bottom:1px solid #dbdbdb;
 }
 
@@ -152,6 +111,7 @@
 }
 
 .activities a {
+  color:black;
   font: 100 45px 'JennaSue', sans-serif;
 }
 
@@ -296,6 +256,7 @@
 
 .work p{
 
+  margin: 1em;
   font: 100 18px 'EB Garamond', Helvetica, sans-serif
   /*font: 100 20px 'Goudy Bookletter 1911', Helvetica, sans-serif;*/
 }
@@ -422,6 +383,7 @@ color: green !important;}
 .flag.flag-gb {background-position: -25px -15px}
 .flag.flag-it {background-position: -50px -15px}
 
+<<<<<<< HEAD
 
 /*Circular menu*/
 .circular-menu {
@@ -712,12 +674,7 @@ body {
 }
 
 #content {
-<<<<<<< HEAD
 	height:auto;
-=======
-	
-        margin-top: 80px;
->>>>>>> parent of 60f0c8a... Menu
 	width:100%;
 	padding-top:40px;
 	padding-bottom:40px;   /* Height of the footer element */
@@ -731,10 +688,3 @@ body {
 	background:#090274;
 	color:white;
 }
-
-/*Zoom for map*/
-.grabbing { cursor: url(closedhand.cur), pointer !important; }
-#mapContainer #mapControls { position: relative; left: 80px; top: -229px; width: 29px; }
-#mapContainer #mapControls #up { background: url(../Images/iconUp.png) no-repeat center top; display: block; height: 26px; width: 29px; }
-#mapContainer #mapControls #down { background: url(../Images/iconDown.png) no-repeat center top; display: block; height: 27px; width: 29px; }
-
