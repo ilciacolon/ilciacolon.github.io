@@ -33,6 +33,23 @@
 .framepdf {width:100%; height:400px;}
 }
 
+/*Ciacolon style*/
+
+.Ciacolon_Style
+{
+	
+}
+
+.Ciacolon_Style p
+{
+	
+}
+
+.Ciacolon_Style h1
+{
+	
+}
+
 /* Webpage wrapper */
 html,
 body {
@@ -186,29 +203,28 @@ color: green !important;}
 
 /*Flags*/
 
+.showbox {
+  float: left;
+  margin: 4em 1em;
+  width: 100px;
+  height: 60px;
+  border: 2px solid green;
+  background-color: #fff;
+  line-height: 60px;
+  text-align: center;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
 
-  .showbox {
-    float: left;
-    margin: 4em 1em;
-    width: 100px;
-    height: 60px;
-    border: 2px solid green;
-    background-color: #fff;
-    line-height: 60px;
-    text-align: center;
-    -webkit-transition: 1s ease-in-out;
-    -moz-transition: 1s ease-in-out;
-    -o-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
-  }
-  
-  .showbox.slideright:hover {
-    -webkit-transform: translate(3em,0);
-    -moz-transform: translate(3em,0);
-    -o-transform: translate(3em,0);
-    -ms-transform: translate(3em,0);
-    transform: translate(3em,0);
-  }
+.showbox.slideright:hover {
+  -webkit-transform: translate(3em,0);
+  -moz-transform: translate(3em,0);
+  -o-transform: translate(3em,0);
+  -ms-transform: translate(3em,0);
+  transform: translate(3em,0);
+}
   
 .dl-horizontal dt 
 {
@@ -375,10 +391,6 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-<<<<<<< HEAD
-=======
-    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
->>>>>>> origin/master
     background-size: cover;
     transition: 1s opacity;
 }
