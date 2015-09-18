@@ -375,6 +375,10 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
+<<<<<<< HEAD
+=======
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+>>>>>>> origin/master
     background-size: cover;
     transition: 1s opacity;
 }
