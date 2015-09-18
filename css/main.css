@@ -578,6 +578,7 @@ color: green !important;}
 	position:static;
 
 }
+<<<<<<< HEAD
 
 /* Menu */
 .Menu
@@ -657,6 +658,8 @@ p.info_menu
 }
 
 
+=======
+>>>>>>> parent of 60f0c8a... Menu
 /* Sticky footer */
 html,
 body {
@@ -709,7 +712,12 @@ body {
 }
 
 #content {
+<<<<<<< HEAD
 	height:auto;
+=======
+	
+        margin-top: 80px;
+>>>>>>> parent of 60f0c8a... Menu
 	width:100%;
 	padding-top:40px;
 	padding-bottom:40px;   /* Height of the footer element */
