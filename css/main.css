@@ -101,11 +101,18 @@ body {
 
 }
 
-#content {
+#content-main
+{
 	height:auto;
 	width:100%;
 	padding-top:40px;
 	padding-bottom:40px;   /* Height of the footer element */
+}
+#content {
+	height:auto;
+	width:100%;
+	padding-top:80px;
+	padding-bottom:80px;   /* Height of the footer element */
 }
 #footer {
 	width:100%;
@@ -115,6 +122,46 @@ body {
 	left:0;
 	background:#090274;
 	color:white;
+}
+
+#footer-main {
+	width:100%;
+	height:40px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:#090274;
+	color:white;
+}
+
+/*CSS Style for most of the webpage*/
+
+.MainPage {
+  background-color: white; 
+  border-bottom:1px solid #dbdbdb;
+  font-family:'HomemadeApple';
+}
+
+.MainPage h1 {
+  font: 100 60px 'HomemadeApple';
+    color:#090274;
+
+}
+
+.MainPage h2 {
+  font: 100 45px 'HomemadeApple', 
+}
+
+.MainPage h3 {
+  font: 100 30px 'HomemadeApple', 
+}
+
+.MainPage p {
+  font: 100 17px 'EB Garamond', Helvetica, sans-serif;
+}
+
+.MainPage a {
+  font: 100 45px 'HomemadeApple', sans-serif;
 }
 
 /*Navigator tab*/
@@ -139,7 +186,7 @@ body {
 	display: inline;
 }
 
-/*Main image*/
+/*Banner*/
 
 .jumbotron {
   background-image: url("../Images/Il_Ciacolon_Banner.png");

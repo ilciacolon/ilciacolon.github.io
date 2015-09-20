@@ -15,8 +15,8 @@
   <script src="../javascript/validator-min.js"></script> <script
   src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script> <script
   src="../javascript/app.js"></script> <!-- in this order, needs jquery-->
-  <script src="../javascript/jquery.motionCaptcha.0.2.js" ></script>
-  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="../javascript/jquery.motionCaptcha.0.2.js" ></script> <script
+  src="http://maps.googleapis.com/maps/api/js"></script>
 
  
   <!--Google Analytics-->
@@ -34,28 +34,23 @@
 <script>
   var myCenter=new google.maps.LatLng(45.033768, 7.685966);
   
-  function initialize() {
-  var mapProp = {
-    center:myCenter,
-    zoom:15,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  function initialize() { var mapProp = {
+    center:myCenter, zoom:15, mapTypeId:google.maps.MapTypeId.ROADMAP
+  }; var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+   
+  var image = new google.maps.MarkerImage(
+    "../Images/FlagIcons/map_pin_icon.png", new google.maps.Size(71, 71));
   
-  var image = {
-    url:'../Images/FlagIcons/map_pin_icon.png',
-    size: new google.maps.Size(20, 32),
-  };
-  
-  var marker=new google.maps.Marker({
-  position:myCenter,
-  icon:image,
+  var image = { url: '../Images/FlagIcons/map_pin_icon.png', scaledSize: new
+  google.maps.Size(72, 65)
+};
+ 
+   
+  var marker=new google.maps.Marker({ position:myCenter, icon:image, map:map,
   });
 
-marker.setMap(map);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+marker.setMap(map); } google.maps.event.addDomListener(window, 'load',
+initialize); </script>
 
 <style>
 /* MotionCAPTCHA canvas */
@@ -123,23 +118,22 @@ $(document).ready(function() { $('input').keydown( function(e) {
 	   <div class="container">
 	    <div class="row">
 	      <div class="col-md-2"></div> <div class="col-md-8">
-		<h1 align="center"> Contatti </h1>
-	      <p align="justify"> </div>
+		<h1 align="center"> Contatti </h1></div>
 	   <div class="col-md-2"></div> </div>
 	  </div>
 	   
-	</div>
-
-	<div id="googleMap" align="center" style="width:500px;height:380px;"></div>
-
-	<div class="text-center">
-	  <h2> Write me a message:</h2>
-	</div>
-	<div class="container-fluid">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-6">
+			<div class="text-center">
+	                    <h2> Write me a message:</h2>
+	                </div>
+	    
+	    <div class="container-fluid">
 	    <div class="row">
-	      <div class="col-md-2">
-	      </div>
-	      <div class="col-md-8"> <form action="#" method="post" id="commentForm"
+	      <div class="col-md-2"> </div>
+	      <div class="col-md-8"> <form
+	      action="#" method="post" id="commentForm"
       data-toggle="validator" role="form" >
 	<!-- <legend>Contact Form</legend> -->
 		<div class="form-group"> <label class="control-label">What's
@@ -178,21 +172,20 @@ $(document).ready(function() { $('input').keydown( function(e) {
 				class="glyphicon glyphicon-pencil"></i></span>
 					<textarea id="msg" maxlength="300"
 					name="msg" class="form-control "
-					rows="4" cols="78" placeholder="Enter
-					your message here"></textarea>
+					rows="4" cols="78" placeholder="Messaggio"></textarea>
 			    </div> <span class="help-block with-errors">Up to
 			    300 characters</span>
 			</div>
-			
 <div id="mc"> <p>Please draw the shape in the box to submit the form: (<a
 onclick="window.location.reload()" href="#" title="Click for a new shape">new
 shape</a>)</p> <canvas id="mc-canvas"> Your browser doesn't support the canvas
 element - please visit in a modern browser. </canvas> <input type="hidden"
 id="mc-action" value=""/> </div>
 
-		</div> <div class="col-md-2"> </div>
+		</div>
+		<div class="col-md-2"> </div>
 		
-	      <div class="controls" style="margin-left: 44%;">
+	      <div class="controls" style="margin-left: 35%;">
 		  
 			<input disabled="disabled" autocomplete="false"
 			type="submit" value="Send Message">
@@ -200,11 +193,16 @@ id="mc-action" value=""/> </div>
 	      </div>
 		</form> </div>
 	    </div>
-     </div>
-</div>
-	   
-	   
+            </div>
+	      </div>
+	     
+	      <div class="col-md-6">
+		<div id="googleMap" style="width:500px;height:380px;"></div>
+
+	      </div>
+           </div>
+	   </div>
 	</div><!--MainPage-->
-       </div><!--Content-->
+       </div><!--Content--> <div id="footer"></div>
       </div><!--Wrapper*-->
 </body> </html>
