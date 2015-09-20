@@ -179,13 +179,16 @@ body {
     color:#090274;
 }
 
+.MainPage h6 {
+  font: 100 14px 'Roboto Reg';
+}
 .MainPage p {
 	font: 100 18px 'Roboto Reg',
   /*font: 100 17px 'EB Garamond', Helvetica, sans-serif;*/
 }
 
 .MainPage a {
-  font: 100 45px 'HomemadeApple', sans-serif;
+  font: 100 18px 'Roboto Reg';
 }
 
 /*Navigator tab*/
