@@ -657,7 +657,6 @@ p.info_menu {
 /* Declare heights because of positioning of img element */
 .carousel .item {
 /*   display: inline-block;*/
-  height: 100%;
   max-width: auto;
   
 }
@@ -671,7 +670,7 @@ p.info_menu {
 }
 .carousel img {
 /*  display: inline-block;*/
-  height: 100%;
+  height: auto;
   max-width:auto;
   
 }
