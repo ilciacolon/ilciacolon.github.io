@@ -794,7 +794,7 @@ p.info_menu {
   transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: white;
 }
 .caption-container {
   text-align: center;
@@ -818,4 +818,31 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.pill-wrapper{
+ width: 100%;
+ background-color: white;
+}
+
+.nav {
+ width: 100%;
+ height: 60px;
+ position: fixed;
+ z-index: 999;
+}
+
+.nav ul {
+ margin: -30px 60px;
+}
+
+.nav a {
+ color: #090274;
+ font-size: 13.5px;
+ font-weight: 500;
+ text-transform: uppercase;
+}
+
+.nav li {
+ display: inline;
 }
