@@ -556,7 +556,7 @@ a {
 	;
 	position: absolute;
 	text-align: right;
-	left: -50%;
+	left: -58%;
 	-webkit-transition: all 2s ease;
 	-moz-transition: all 2s ease;
 	-o-transition: all 2s ease;
@@ -569,7 +569,7 @@ a {
 	;
 	position: absolute;
 	text-align: left;
-	left: -0%;
+	left: 0%;
 	-webkit-transition: all 2s ease;
 	-moz-transition: all 2s ease;
 	-o-transition: all 2s ease;
@@ -730,7 +730,7 @@ p.info_menu {
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
@@ -799,12 +799,7 @@ p.info_menu {
 .active, .dot:hover {
   background-color: white;
 }
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
+
 
 img.demo {
   opacity: 0.6;
