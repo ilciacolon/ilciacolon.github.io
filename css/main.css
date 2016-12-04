@@ -854,9 +854,10 @@ img.hover-shadow {
 }
 .thefork-container a{
 background-color: white;
-color: #7f7bb8;
-border-color: #7f7bb8;
+color: #090274;
+border-color: #090274;
 font-size: 13px;
+font-weight: bold;
 }
 .thefork-container a:hover{
 background-color: #090274;
@@ -864,4 +865,6 @@ opacity: 0.8;
 color: white;
 border-color: #090274;
 font-size: 13px;
+font-weight: bold;
+
 }
