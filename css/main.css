@@ -697,7 +697,7 @@ p.info_menu {
 /* The Modal (background) */
 .modal {
   display: none;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   padding-top: 100px;
   left: 17%;
@@ -706,6 +706,7 @@ p.info_menu {
   height: 100%;
   overflow: auto;
   background-color: black;
+  
 }
 
 /* Modal Content */
@@ -716,6 +717,7 @@ p.info_menu {
   padding: 0;
   width: 88%;
   max-width: 1200px;
+  
 }
 
 /* The Close Button */
@@ -849,4 +851,17 @@ img.hover-shadow {
 	position: fixed;
 	right: 10%;
 	margin-top: 0.5em;
+}
+.thefork-container a{
+background-color: white;
+color: #7f7bb8;
+border-color: #7f7bb8;
+font-size: 13px;
+}
+.thefork-container a:hover{
+background-color: #090274;
+opacity: 0.8;
+color: white;
+border-color: #090274;
+font-size: 13px;
 }
