@@ -697,9 +697,8 @@ p.info_menu {
 /* The Modal (background) */
 .modal {
   display: none;
-  position: absolute;
+  position: relative;
   z-index: 1;
-  padding-top: 100px;
   left: 17%;
   top: 0;
   width: 66%;
