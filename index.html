@@ -92,7 +92,9 @@
                 } else {
                     $(this).bind({
                         mouseenter: function(e) {
-                            name.innerHTML = 'Entra';
+							if (countcircle ==1) {
+								name.innerHTML = 'Entra';
+                            }
                         },
                         mouseleave: function(e) {
                             name.innerHTML = '';
