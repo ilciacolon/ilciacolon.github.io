@@ -697,9 +697,9 @@ p.info_menu {
   position: fixed;
   z-index: 1;
   padding-top: 100px;
-  left: 0;
+  left: 17%;
   top: 0;
-  width: 100%;
+  width: 66%;
   height: 100%;
   overflow: auto;
   background-color: black;
@@ -711,7 +711,7 @@ p.info_menu {
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
+  width: 88%;
   max-width: 1200px;
 }
 
@@ -734,8 +734,16 @@ p.info_menu {
 
 .mySlides {
   display: none;
+  
 }
 
+.mySlides img {
+/*  display: inline-block;*/
+  height: 80vh;
+  width: auto;
+
+  
+}
 /* Next & previous buttons */
 .prev,
 .next {
