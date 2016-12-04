@@ -58,8 +58,11 @@
                     name.innerHTML = 'Entra';
 
                     /*This moves the address and the phone to the sides*/
-                    var center = {
-                        left: "0%"
+                    var center_left = {
+                        left: "-2%"
+                    };
+					var center_right = {
+                        left: "2%"
                     };
                     var left = {
                         left: "-43%"
@@ -70,8 +73,8 @@
                     var count = 1;
 
                     if (count != 0) {
-                        $('.phone_message').animate((count != 0) ? left : center);
-                        $('.address_message').animate((count != 0) ? right : center);
+                        $('.phone_message').animate((count != 0) ? left : center_left);
+                        $('.address_message').animate((count != 0) ? right : center_right);
                         count = 0;
                     }
                 },
