@@ -130,6 +130,15 @@
 </head>
 
 <body>
+  <!-- Load Facebook SDK for Javascript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<div id="wrapper">
 		<div id="header">
 			<div class="nav">
@@ -137,14 +146,14 @@
 					<ul class="pull-left">
 						<li>
 							<a href="../index.html" style="margin-left:-40px"><img src="../Images/il_ciacolon_logo2.jpg" style="margin-bottom:5px" height=70px></a>
-						</li>
+						</li> 
 					</ul>
 					<ul class="pull-right">
 						<li><a href="./Il_Nostro_Chef.html">Il Nostro Chef</a></li>
 						<li><a href="./Menu.html">Men&uacute</a></li>
 						<li><a href="./Galleria.html">Galleria</a></li>
 						<li><a href="./La_Storia.html">La &nbspStoria</a></li>
-						<li><a href="./Contatti.html">Contatti</a></li>
+						<li><a href="./Novita_ed_eventi.html">Eventi</a></li>
 					</ul>
 				</div>
 				<!--container-->
@@ -159,6 +168,7 @@
 					<div class="row">
 						<div class="col-md-2"></div>
 						<div class="col-md-8">
+
 							<h1 align="center"> Contatti </h1>
 
 							<h4 align="center"> Ristorante "Il Ciacolon"</h4>
@@ -173,7 +183,9 @@
 							</p>
 						</div>
 
-						<div class="col-md-2"></div>
+						<div class="col-md-2">
+						</div>
+
 					</div>
 				</div>
 
@@ -235,8 +247,7 @@
 										
 										<div id="mc">
 
-											<p>Riproduci il disegno nel riquadro per inviare il messaggio: (<a onclick="window.location.reload()" href="#" title="Fai click per un
-		nuovo disegno">Nuovo disegno</a>)</p>
+											<p>Riproduci il disegno nel riquadro per inviare il messaggio: (<a onclick="window.location.reload()" href="#" title="Fai click per unuovo disegno"> Nuovo disegno </a>)</p>
 											<canvas id="mc-canvas"> Your browser doesn't support the canvas element - please visit in a modern browser. </canvas>
 											<input type="hidden" id="mc-action" value="" />
 										</div>
