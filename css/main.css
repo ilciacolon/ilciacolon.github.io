@@ -396,9 +396,9 @@ label.valid {
 	/*middle of the screen*/
 	left: 50%;
 	/*middle of the screen*/
-	width: 80vh;
+	width: 82vh;
 	/*size of the circle*/
-	height: 80vh;
+	height: 82vh;
 	/*size of the circle*/
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
@@ -743,8 +743,8 @@ p.info_menu {
 
 .mySlides img {
 /*  display: inline-block;*/
-  height: 80vh;
-  width: auto;
+  height: auto;
+  width: 90vh;
 
   
 }
@@ -847,7 +847,7 @@ img.hover-shadow {
 }
 
 .container-facebook {
-	position: fixed;
+	position: absolute;
 	right: 10%;
 	margin-top: 0.5em;
 }
