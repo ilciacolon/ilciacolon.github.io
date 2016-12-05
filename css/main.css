@@ -620,7 +620,13 @@ p.menu_option_name {
 p.menu_name {
 	font-family: HomemadeApple;
 	font-size: 28px;
-	margin: 0.25em 0 0.25em 0;
+	margin: 1.5em 0 0.5em 0;
+}
+
+p.menu_formule_name {
+	font-family: HomemadeApple;
+	font-size: 28px;
+	margin: 1em 0 0.5em 0;
 }
 
 p.prezzo {
