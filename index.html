@@ -88,12 +88,28 @@
             var image = document.getElementById('logo');
             var original_height = image.height;
 
-            var large = {
-                height: "80vh"
-            };
-            var small = {
-                height: "50vh"
-            };
+				if (screen.height>screen.width)
+				{
+					var large =
+					{
+						 height: "80vw"
+					};
+					var small =
+					{
+						height: "50vw"
+					};
+                }
+				else{
+					var large =
+					{
+						height: "80vh"
+				    };
+					var small =
+					{
+						height: "50vh"
+					};
+				}
+				
             var countcircle = 1;
 
             $("#logo").css(large).on('click', function() {
