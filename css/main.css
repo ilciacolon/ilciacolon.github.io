@@ -602,8 +602,9 @@ a {
 	height: auto;
 	top: 50%;
 	left: 50%;
-	margin: 0 0 0 -250px;
+	margin: 0 0 0 -50%;
 }
+
 p.menu_option_name {
 	font-family: HomemadeApple;
 	color: #090274;
@@ -617,11 +618,10 @@ p.menu_option_name {
 
 .Menu {
 	position: relative;
-	width: 100%;
+	width: 90%;
+	margin-left: 5%;
 	height: auto;
 	top: 50%;
-	left: 50%;
-	margin: 0 0 0 -250px;
 	border: 1px solid #000;
 }
 
