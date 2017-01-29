@@ -22,20 +22,25 @@
                             </a>
                         </li>
                     </ul>
-                    <ul id="ciaco-nav">
-                        <li><a href="./Menu.html">Men&uacute;</a>
-                        </li>
-                        <li><a href="./Novita_ed_eventi.html">Eventi</a>
-                        </li>
-                        <li><a href="./La_Storia.html">La Storia</a>
-                        </li>
-                        <li><a href="./Il_Nostro_Chef.html">I Nostri Chef</a>
-                        </li>
-                        <li><a href="./Galleria.html">Galleria</a>
-                        </li>
-                        <li><a href="./Contatti.html">Contatti</a>
-                        </li>
-                    </ul>
+				<ul id="ciaco-nav">
+						<ul class="menu">
+							<li><a href="./Menu.html">Men&uacute;</a></li>
+							<li><a href="./Novita_ed_eventi.html">Eventi</a></li>
+							<li><a href="./La_Storia.html">La Storia</a></li>
+							<li><a href="./Il_Nostro_Chef.html">I Nostri Chef</a></li>
+							<li><a href="./Galleria.html">Galleria</a></li>
+							<li><a href="./Contatti.html">Contatti</a></li>
+						</ul>
+						
+						<select> 
+							<option value="./Menu.html">Men&uacute;</option> 
+							<option value="./Novita_ed_eventi.html">Eventi</option> 
+							<option value="./La_Storia.html">La Storia</option> 
+							<option value="./Il_Nostro_Chef.html">I Nostri Chef</option> 
+							<option value="./Galleria.html">Galleria</option>
+							<option value="./Contatti.html">Contatti</option> 
+						</select> 
+				</ul>
             </div>
             <div id="header-line"> </div>
         </div>
@@ -45,17 +50,26 @@
                     <iframe id="facebook-buttons" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Filciacolon&width=95&layout=button&action=like&size=small&show_faces=false&share=true&height=65&appId" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
             </div>
              <div class="MainPage">
+				<p><br></p>
+			    <div class="container">
                     <div class="row">
                         <div class="col-md-2 col-sx-2 col-sm-2"></div>
                         <div class="col-md-8 col-sx-8 col-sm-8">
                             <h1 align="center">Il Men&uacute;</h1>
+						</div>
+						<div class="col-md-2 col-sx-2 col-sm-2"></div>
+					</div>
+
+                    <div class="row">
+                        <div class="col-md-1 col-sx-1 col-sm-1"></div>
+                        <div class="col-md-10 col-sx-10 col-sm-10">
                             <p align="center">
                                 Il nostro primo ospite fu quel Licinio Lucullo, proconsole tronfio e abbuffone; gli servimmo un piattone di Jota e una brocca di graspa del Friuli e se ne torn&oacute all'Averno cantando canzonacce in veneto.
                                 Da allora si fa vedere al Ciacolon, a braccetto con Goldoni urlando come un ossesso: <br /> <br /> - <i>Ostia d'un can! Stasera ghe xe risi e bisi? </i>
                                 <br /><br />Considera dunque, gentile avventore che la tua ispirazione ed il tuo buongusto ti danno il diritto a calcare il desco del Ciacolon... che fu di grandi e meno grandi di quelli nella polvere e quelli sull'altare...
                                 <br /><br />Abbiti considerazione, allegria, facondia e... Buon Appetito che la Storia ed il CIACOLON ti guardano! </p>
                         </div>
-                        <div class="col-md-2 col-sx-2 col-sm-2"></div>
+						<div class="col-md-1 col-sx-1 col-sm-1"></div>
                     </div>
                     <div class="container" align="center">
                         <img src="../Images/menu_header.png" style="margin:6vh 0px -1vmin;" width=80%>
@@ -131,8 +145,26 @@
         <div id="footer"><p>&copy;Jos&eacute; de Arcos & Giorgia Grisot </p></div>
     </div>
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+	<script>
+	 // DOM ready
+	 $(function() {
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Vai a ..."
+      }).appendTo("#ciaco-nav select");
+
+	   // To make dropdown actually work
+	   // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+      $("#ciaco-nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+
+	 });
+	</script>
 </body>
 
 </html>
