@@ -406,6 +406,7 @@ label.valid {
 	z-index: 0;
 }
 
+
 .circle {
 	position: absolute;
 	height: 100%;
@@ -431,12 +432,20 @@ label.valid {
 	z-index: 20;
 }
 
+.hidden-menu select{
+	display:none;
+}
+.open.hidden-menu select{
+
+	margin: 0 0 0 0;
+	z-index:-10;
+}
 .circle a {
 	position: absolute;
 	z-index: 40;
 	font-family: 'HomemadeApple';
 	font-weight: 100;
-	/*font-size: 1.5em;*/
+	/*font-size: 1.5em;*/S
 	font-size:calc(1em + 0.5vw);
 
 	/*color: #000000;*/
@@ -496,8 +505,6 @@ label.valid {
 #chef {
 	border: 1px solid #000;
 }
-
-.open.menu-button {}
 
 .text_placement {
 	position: absolute;
@@ -966,5 +973,26 @@ img.hover-shadow {
 	height:calc(3em + 0.5vw);
 	/*height:8.9vh;*/
 	}
+	
+	.circle ul {display:none;}
+	
+	.circular-list {display:none;}
+	
+
+	.open.hidden-menu select{
+		display: inline-block;
+		position:absolute;
+		top:15%;
+		left:40%;
+		width:20%;
+		height:5%;
+		font-size:calc(0.7em + 0.5vw);
+		background-color: #090274;
+		color:white;
+
+		opacity:1;
+		z-index: 1000;
+	}
+	
 }
 

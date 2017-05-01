@@ -18,7 +18,7 @@
         <div id="header-main"></div>
         <div id="content-main">
             <div class="circular-menu">
-                <div class="circle">
+                    <ul class="circle">
                     <ul id="nav" class="circular-list navbar-default">
                         <li><a href="./it/Il_Nostro_Chef.html">I Nostri Chef</a>
                         </li>
@@ -35,8 +35,23 @@
                         <li><a href="./it/Contatti.html">Contatti</a>
                         </li>
                     </ul>
-                </div>
+                    
+                 </ul>
+
+             </div>
+            
+            <div class = "hidden-menu">
+                    <select>
+                        <option value="./it/la_ciacola.html">La Ciacola</option> 
+                        <option value="./it/Menu.html">Men&uacute;</option> 
+			<option value="./it/Novita_ed_eventi.html">Eventi</option>
+                        <option value="./it/La_Storia.html">La Storia</option> 
+			<option value="./it/Il_Nostro_Chef.html">I Nostri Chef</option> 
+	    	    	<option value="./it/Galleria.html">Galleria</option>
+			<option value="./it/Contatti.html">Contatti</option> 
+                    </select>
             </div>
+            
             <div class="menu-button">
                 <img alt="Ciacolon logo" id="logo" src="./Images/blu2.png"/>
             </div>
@@ -132,26 +147,16 @@
                     /*This shows the message Enter*/
                     name.innerHTML = 'Entra';
 
-					if (window.height>window.width)
-				{
-                    /*This moves the address and the phone to the sides*/
-                    var left = {
-                        left: "0vw"
-                    };
-                    var right = {
-                        left: "25vw"
-                    };
-                }
-				else{
+				
                     /*This moves the address and the phone to the sides*/
                     var left = {
                         left: "-46vw"
                     };
                     var right = {
-                        left: "25vw"
+                        left: "20vw"
                     };
 					
-				}
+				
 				
 
 
@@ -176,8 +181,9 @@
                 event.preventDefault();
                 $(this).toggleClass('open');
                 $('.circle').toggleClass('open');
+                $('.hidden-menu').toggleClass('open');
                 $(this).trigger("mouseleave");
-
+   
                 if (number_click == 1) {
                     $(this).unbind("mouseenter mouseleave");
                 } else {
@@ -192,7 +198,8 @@
                         }
                     });
                 }
-				 number_click=0;
+		
+                number_click=0;
 
             });
 
@@ -200,6 +207,25 @@
                 $("[data-toggle='tooltip']").tooltip();
             });
         });
+
+	 // DOM ready
+	 $(function() {
+
+     $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Vai a ..."
+      }).appendTo(".hidden-menu select");
+      // Create default option "Go to..."
+
+	   // To make dropdown actually work
+	   // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+      $(".hidden-menu select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+
+	 });
+	
     </script>
 </body>
 </html>
