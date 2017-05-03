@@ -218,7 +218,7 @@ body {
 
 .MainPage h4 {
 	font: 100 18px 'Roboto Bold';
-	font-size: 3vmin;
+	font-size: calc(12px + 0.5vw);
 	color: #090274;
 }
 
@@ -497,7 +497,6 @@ label.valid {
 	border: 1px solid #000;
 }
 
-.open.menu-button {}
 
 .text_placement {
 	position: absolute;

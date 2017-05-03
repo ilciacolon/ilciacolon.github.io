@@ -90,38 +90,35 @@
             /*Open circle*/
 
             var image = document.getElementById('logo');
-            var original_height = image.height;
+		if (window.height>window.width){
+                    var radius = 20;
 
-				if (window.height>window.width)
-				{
-					var radius = 20;
+                    var large =
+                    {
+                            height: "40vw",
 
-					var large =
-					{
-						height: "40vw",
-
-					};
-					var small =
-					{
-						height: "25vw",
-					};
+                    };
+                    var small =
+                    {
+                            height: "25vw",
+                    };
 					
 
                 }
-				else{
-					var radius = 35;
+		else{
+                    var radius = 35;
 
-					var large =
-					{
-						height: "40vw",
+                    var large =
+                    {
+                            height: "40vw",
 
-				    };
-					var small =
-					{
-						height: "25vw",
-					};
+                    };
+                    var small =
+                    {
+                            height: "25vw",
+                    };
 					
-				}
+		}
 				
 			/*Draw circle menu*/
 
@@ -150,7 +147,7 @@
 				
                     /*This moves the address and the phone to the sides*/
                     var left = {
-                        left: "-46vw"
+                        left: "-46vw" 
                     };
                     var right = {
                         left: "20vw"
@@ -189,8 +186,8 @@
                 } else {
                     $(this).bind({
                         mouseenter: function(e) {
-							if (countcircle ==1) {
-								name.innerHTML = 'Entra';
+			    if (countcircle ==1) {
+				name.innerHTML = 'Entra';
                             }
                         },
                         mouseleave: function(e) {
