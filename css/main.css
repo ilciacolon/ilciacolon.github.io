@@ -104,7 +104,7 @@ body {
 
 #header-main {
 	width: 100%;
-	height: 3vmin;
+	height: 1.5em;
 	position: fixed;
 	background: #090274;
 	color: white;
@@ -158,7 +158,7 @@ body {
 
 #footer {
 	width: 100%;
-	height: 4vmin;/*For every page, except for index.html*/
+	height: 1.5em;/*For every page, except for index.html*/
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -168,16 +168,15 @@ body {
 
 #footer p{
 	color: #C0C0C0;
-	margin-left:83vw;
-	margin-top:1vmin;
+	/*margin-left:85%;*/
+	margin-left:1em;
+	margin-top:0.5em;
 	font-size:calc(4px + 0.5vw);
-		display:none;
-
 }
 
 #footer-main {
 	width: 100%;
-	height: 3vmin;
+	height: 1.5em;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -185,11 +184,11 @@ body {
 }
 
 #footer-main p{
-	display:none;
 	color: #C0C0C0;
-	margin-left:83vw;
-	margin-top:0.75vmin;
-	font-size:calc(4px + 0.5vw);
+	margin-left:1em;
+	/*margin-left:87vw;*/
+	margin-top:0.6vmin;
+	font-size:0.8em;
 }
 
 
