@@ -55,6 +55,77 @@ font: 20px "Lato", sans-serif;
 color: #111;
 }
 
+
+#wrapper {
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	font-size: 72px;
+	/*font-size: 9vh;*/
+	height: 80px;
+	/*height: 11vmin;*/
+
+	background: white;
+	color: #fff;
+	font-family: 'PT Sans', sans-serif;
+	transition: all 0.4s ease;
+	margin: 0;
+	clear: both;
+	top: 0;
+	z-index: 900;
+}
+
+#ciaco-logo
+{
+	left:calc(50% - 100px);/*To center*/
+	margin-top:0.2em;
+}
+
+#ciaco-logo img
+{
+	height:70px;
+}
+
+.nav {
+ width: 100%;
+ height: 60px;
+ margin-top:-30px;/*to center*/
+
+ /*height: 9vh;*/
+ min-height:60px;
+ position: fixed;
+ z-index: 999;
+}
+
+.nav ul {
+	position: fixed;
+}
+
+.nav li {
+ display: inline;
+}
+
+.container-facebook {
+	position: absolute;
+	left: 10%;
+	margin-top: 1vh;
+}
+
+.facebook-button{
+	width:150px;
+	height:65px;
+	border:none;
+	overflow:hidden;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
