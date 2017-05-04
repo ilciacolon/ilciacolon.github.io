@@ -3,13 +3,33 @@
 <html>
 
 <head>
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta charset='UTF-8'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
     <link rel="stylesheet" href="../css/ciacola.css" type="text/css" />
     <link rel="shortcut icon" href="../Images/FlagIcons/ciacolon_icon.ico">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>    
 
-    <title>Il Nostro Chef</title>
+    <link type="text/css" rel="stylesheet" href="../css/dcodes.css" />
+    <script type="text/javascript" src="../javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="../javascript/dcodes.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../css/dc_tooltips.css" />
+    <script type="text/javascript" src="../javascript/dc_tooltips.js"></script>
+    
+        <!-- DC jflickrfeed -->
+    <link href="../css/dc_jflickrfeed.css" type="text/css" rel="stylesheet" />
+    <script src="../javascript/jflickrfeed.js"></script>
+    
+    <!-- DC jflickrfeed: Colorbox Lightbox -->
+    <link href="../css/colorbox.css" rel="stylesheet" type="text/css" media="screen" /> 
+    <script src="../javascript/jquery.colorbox-min.js"></script>
+    
+    <!-- DC jflickrfeed: Cycle Slider -->
+    <script src="../javascript/jquery.cycle.all.js"></script>
+    
+    
+    <title>La Ciacola</title>
 </head>
 
 <body>
@@ -34,7 +54,7 @@
                 <div class="container">
                     <div class="row" >
                         <div class="col-md-12 col-sx-12 col-sm-12">
-                            <h1 align="center"> <img style="width: 90vw" src="../Images/tipi2.png"> </h1>
+                            <h1 align="center"> <img style="width: 80vw" src="../Images/tipi2.png"> </h1>
                         </div>
                     </div>
                     
@@ -50,7 +70,7 @@
 				    </h4>
 				    <p align="justify">
 					Una ristorazione pi&uacute easy e veloce, da godere senza rinunciare alla qualit&aacute e alla cura che da sempre ci contraddistingue. 
-					LA CIACOLA &eacute un "Hostaria" di cucina leggera e gustosa, arredato in stile shabby chic e caratterizzato dunque da colori chiari e ambienti luminosi con un'impronta sofisticata; $eacute adatto per pranzi di lavoro, spuntini veloci, colazioni con gli amici a pranzo e, alla sera a partire dalle 19, per aperitivi sfiziosi e informali e come punto di ritrovo pre e post serata.
+					LA CIACOLA &eacute un "Hostaria" di cucina leggera e gustosa, arredato in stile shabby chic e caratterizzato dunque da colori chiari e ambienti luminosi con un'impronta sofisticata; &eacute adatto per pranzi di lavoro, spuntini veloci, colazioni con gli amici a pranzo e, alla sera a partire dalle 19, per aperitivi sfiziosi e informali e come punto di ritrovo pre e post serata.
 				    </p>
 				    
 				   <p><br></p>
@@ -69,19 +89,29 @@
 					LUN e MER <br>
 					Solo su richiesta (minimo 15 persone)
 				   </p>
+				   <!-- DC Flickr Feed Start -->
+				    
 				</div>
 				<div class="col-md-2 col-sx-2 col-sm-2"></div>							
 			    </div>
+			    
+				<p><br></p>
+				<div id="dc_jflickr_feed_container" style="width:100%;">
+				      <ul id="jflickr_cbox" class="dc_jflickr_thumbs"></ul>
+				</div>
+				<!-- DC Flickr Feed End -->
+				<div class="dc_clear"></div> <!-- line break/clear line --> 
 		    </div>
 		</div>
+		
             </div>
         </div>
         <div id="footer"><p>&copy;Jos&eacute; de Arcos & Giorgia Grisot </p></div>
     </div>
+  
 	
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
-		<script>
+ 
+    <script>
 	 // DOM ready
 	 $(function() {
       // Create default option "Go to..."
@@ -98,7 +128,21 @@
       });
 
 	 });
-	</script>
+    </script>
+    <script type="text/javascript">
+	    $('#jflickr_cbox').jflickrfeed({
+		    limit: 18, // number of images to show
+		    qstrings: { id: '130468510@N06' // id of flickr gallery (use idgettr.com to get flickr gallery id)
+		    },
+		    // Small images: {{image_s}}
+		    // Medium images: {{image}}
+		    // Large images: {{image_b}}
+		    itemTemplate: '<li>' + '<a rel="colorbox" href="{{image_b}}" title="{{title}}">' + '<img src="{{image_q}}" alt="{{title}}" />' + '</a>' + '</li>'
+	    }, function(data) {
+		    $('#jflickr_cbox a').colorbox();
+	    });
+    </script>
+
 </body>
 
 </html>
