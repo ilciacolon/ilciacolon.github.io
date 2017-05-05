@@ -48,20 +48,15 @@ font-size: 25px;
 letter-spacing: 10px;
 }
 
+p {
+font-size:18px;	
+}
+
 h3 {
 letter-spacing: 5px;
 text-transform: uppercase;
 font: 20px "Lato", sans-serif;
 color: #111;
-}
-
-
-#wrapper {
-	min-height: 100%;
-	width: 100%;
-	position: relative;
-	overflow-y: hidden;
-	overflow-x: hidden;
 }
 
 #header {
@@ -70,10 +65,11 @@ color: #111;
 	text-align: center;
 	font-size: 72px;
 	/*font-size: 9vh;*/
-	height: 80px;
+	height: 90px;
 	/*height: 11vmin;*/
 
-	background: white;
+	background: #fff;
+	opacity: 0.9;
 	color: #fff;
 	font-family: 'PT Sans', sans-serif;
 	transition: all 0.4s ease;
@@ -85,13 +81,13 @@ color: #111;
 
 #ciaco-logo
 {
-	left:calc(50% - 100px);/*To center*/
+	left: calc(50% - 152px);/*To center*/
 	margin-top:0.2em;
 }
 
 #ciaco-logo img
 {
-	height:70px;
+	height:75px;
 }
 
 .nav {
@@ -115,13 +111,13 @@ color: #111;
 
 .container-facebook {
 	position: absolute;
-	left: 10%;
-	margin-top: 1vh;
+	margin-top: 20px;
+	left: calc(50% - 50px);
+	height: 30px;
 }
 
-.facebook-button{
-	width:150px;
-	height:65px;
+.facebook-buttons{
+
 	border:none;
 	overflow:hidden;
 }
@@ -131,4 +127,8 @@ color: #111;
   .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
   }
+}
+
+.link_color {
+    color: #fff;
 }
