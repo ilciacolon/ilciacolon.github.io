@@ -101,22 +101,25 @@
 					</li>
 				</ul>
 				<ul id="ciaco-nav">
-					<ul class="menu">
-						<li><a href="./Menu.html">Men&uacute;</a></li>
-						<li><a href="./Novita_ed_eventi.html">Eventi</a></li>
-						<li><a href="./La_Storia.html">La Storia</a></li>
-						<li><a href="./Il_Nostro_Chef.html">I Nostri Chef</a></li>
-						<li><a href="./Galleria.html">Galleria</a></li>
-						<li><a href="./Contatti.html">Contatti</a></li>
-					</ul>	
-					<select> 
-						<option value="./Menu.html">Men&uacute;</option> 
-						<option value="./Novita_ed_eventi.html">Eventi</option> 
-						<option value="./La_Storia.html">La Storia</option> 
-						<option value="./Il_Nostro_Chef.html">I Nostri Chef</option> 
-						<option value="./Galleria.html">Galleria</option>
-						<option value="./Contatti.html">Contatti</option> 
-					</select> 
+						<ul class="menu">
+							<li><a href="./la_ciacola.html">La Ciacola</a></li>
+							<li><a href="./Menu.html">Men&uacute;</a></li>
+							<li><a href="./Novita_ed_eventi.html">Eventi</a></li>
+							<li><a href="./La_Storia.html">La Storia</a></li>
+							<li><a href="./Il_Nostro_Chef.html">I Nostri Chef</a></li>
+							<li><a href="./Galleria.html">Galleria</a></li>
+							<li><a href="./Contatti.html">Contatti</a></li>
+						</ul>
+						
+						<select>
+							<option value="./la_ciacola.html">La Ciacola</option> 
+							<option value="./Menu.html">Men&uacute;</option> 
+							<option value="./Novita_ed_eventi.html">Eventi</option> 
+							<option value="./La_Storia.html">La Storia</option> 
+							<option value="./Il_Nostro_Chef.html">I Nostri Chef</option> 
+							<option value="./Galleria.html">Galleria</option>
+							<option value="./Contatti.html">Contatti</option> 
+						</select> 
 				</ul>
             </div>
             <div id="header-line"> </div>
@@ -153,14 +156,14 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-md-12 col-sx-12 col-sm-12">
-                                        <form action="#" method="post" id="commentForm" data-toggle="validator" role="form">
+                                        <form action="mailto:info@ilciacolon.it?subject=Messaggio da ilciacolon.it" method="post" enctype="text/plain" id="commentForm" data-toggle="validator" role="form">
                                             <!-- <legend>Contact Form</legend> -->
                                             <div class="form-group">
                                                 <label class="control-label">Nome</label>
                                                 <div class="controls">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                        <input id="name" type="text" class="form-control" name="name" placeholder="Name">
+                                                        <input id="name" type="text" class="form-control" name="Nome" placeholder="Name">
                                                     </div>
                                                 </div>
                                             </div>
@@ -170,7 +173,7 @@
                                                 <div class="controls">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-                                                        <input id="tel" type="tel" class="form-control" name="tel" placeholder="Telefono" data-error="Il telefono sembra incorretto." required>
+                                                        <input id="tel" type="text" class="form-control" name="Tel" placeholder="Telefono" data-error="Il telefono sembra incorretto." required>
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -180,7 +183,7 @@
                                                 <label class="control-label">Email</label>
                                                 <div class="controls">
                                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" data-error="L'indirizzo email sembra incorretto." required>
+                                                        <input type="text" class="form-control" id="email" name="Email" placeholder="Email" data-error="L'indirizzo email sembra incorretto." required>
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
@@ -190,7 +193,7 @@
                                                 <label class="control-label">Messaggio</label>
                                                 <div class="controls">
                                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                                        <textarea id="msg" maxlength="300" name="msg" class="form-control " rows="4" cols="78" placeholder="Lasciaci un messaggio e ti risponderemo al pi&uacute; presto"></textarea>
+                                                        <input type="text" id="msg" maxlength="300" name="Messaggio" class="form-control " rows="4" cols="78" placeholder="Lasciaci un messaggio e ti risponderemo al pi&uacute; presto"></textarea>
                                                     </div> <span class="help-block with-errors">Fino a 300 caratteri.</span>
                                                 </div>
                                             </div>
@@ -200,7 +203,7 @@
                                                 <input type="hidden" id="mc-action" value="" />
                                             </div>-->
                                             <div class="controls" style="margin: 0px 0px 3em 35%;">
-                                                <input style="margin-left: 12%;" type="submit" value="Inviare">
+                                                <input style="margin-left: 12%;" type="submit" value="Invia">
                                             </div>
                                         </form>
                                     </div>
