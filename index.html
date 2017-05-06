@@ -93,12 +93,6 @@
 				height: "25vw",
 		};
 		
-		var left = {
-			left: "-45%" 
-		};
-		var right = {
-			left: "15%"
-		};
 				
 		if (!is_mobile) {
 			var left = {
@@ -117,6 +111,15 @@
 				$(this).css('top', 50 + radius * Math.sin(-0.5 * Math.PI - 2 * (1 / numitems) * index * Math.PI).toFixed(4) + '%');
 			});
 		}
+		else
+		{
+			var left = {
+				left: "-45%" 
+			};
+			var right = {
+				left: "15%"
+			};
+		}
 		/*Draw circle menu*/
 		var countcircle = 1;
 
@@ -134,10 +137,10 @@
 			/*This moves the address and the phone to the sides*/
 				
 			if (counter == 1) {
-			$('.phone_message').animate(left);
-						$('.address_message').animate(right);
-			counter = 0;
-			}
+				$('.phone_message').animate(left);
+				$('.address_message').animate(right);
+				counter = 0;
+				}
 			},
 			mouseleave: function(e) {
 				/*This hides the message Enter*/
