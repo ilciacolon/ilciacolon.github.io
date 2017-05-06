@@ -156,14 +156,18 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-md-12 col-sx-12 col-sm-12">
-                                        <form action="mailto:info@ilciacolon.it?subject=Messaggio da ilciacolon.it" method="post" enctype="text/plain" id="commentForm" data-toggle="validator" role="form">
-                                            <!-- <legend>Contact Form</legend> -->
+                                        <!-- <form action="mailto:info@ilciacolon.it?subject=Messaggio da ilciacolon.it" method="post" enctype="text/plain" id="commentForm" data-toggle="validator" role="form"> -->
+                                            <form action="https://www.enformed.io/x1tbaba" method="POST" id="commentForm" data-toggle="validator" role="form">
+					    <!-- <legend>Contact Form</legend> -->
                                             <div class="form-group">
                                                 <label class="control-label">Nome</label>
                                                 <div class="controls">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                                         <input id="name" type="text" class="form-control" name="Nome" placeholder="Name">
+							<input type="hidden" name="*redirect" value="http://www.ilciacolon.it/it/Contatti.html" />
+							<input type="hidden" name="*honeypot" />
+							<input type="hidden" name="*subject" value="Messaggio da ilciacolon.it" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -183,8 +187,10 @@
                                                 <label class="control-label">Email</label>
                                                 <div class="controls">
                                                     <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                                        <input type="text" class="form-control" id="email" name="Email" placeholder="Email" data-error="L'indirizzo email sembra incorretto." required>
-                                                    </div>
+                                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" data-error="L'indirizzo email sembra incorretto." required>
+                                                    	<input type="hidden" name="*reply" value="email" />
+
+						    </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>

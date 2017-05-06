@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- You can use open graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url"           content="http://www.ilciacolon.it" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Il Ciacolon" />
+	<meta property="og:description"   content="Ristorante" />
+	<meta property="og:image"         content="http://www.ilciacolon.it/Images/blu2.png"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+<!--    <link rel="stylesheet" href="../jquery.motionCaptcha.0.2.css" type="text/css" />
+-->    <link rel="shortcut icon" href="../Images/FlagIcons/ciacolon_icon.ico">
+
+    <title>Grazie</title>
+	
+	    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC8fPLLbvl7koZn-KwzMBBVzc75i3xBivM"></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="nav">
+				<ul id="ciaco-logo">
+					<li>
+						<a href="../index.html"><img src="../Images/il_ciacolon_logo2.jpg">
+						</a>
+					</li>
+				</ul>
+				<ul id="ciaco-nav">
+						<ul class="menu">
+							<li><a href="./la_ciacola.html">La Ciacola</a></li>
+							<li><a href="./Menu.html">Men&uacute;</a></li>
+							<li><a href="./Novita_ed_eventi.html">Eventi</a></li>
+							<li><a href="./La_Storia.html">La Storia</a></li>
+							<li><a href="./Il_Nostro_Chef.html">I Nostri Chef</a></li>
+							<li><a href="./Galleria.html">Galleria</a></li>
+							<li><a href="./Contatti.html">Contatti</a></li>
+						</ul>
+						
+						<select>
+							<option value="./la_ciacola.html">La Ciacola</option> 
+							<option value="./Menu.html">Men&uacute;</option> 
+							<option value="./Novita_ed_eventi.html">Eventi</option> 
+							<option value="./La_Storia.html">La Storia</option> 
+							<option value="./Il_Nostro_Chef.html">I Nostri Chef</option> 
+							<option value="./Galleria.html">Galleria</option>
+							<option value="./Contatti.html">Contatti</option> 
+						</select> 
+				</ul>
+            </div>
+            <div id="header-line"> </div>
+        </div>
+
+        <div id="content">
+			 <div class="container-facebook">
+                    <iframe id="facebook-buttons" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Filciacolon&width=95&layout=button&action=like&size=small&show_faces=false&share=true&height=65&appId" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+			 <div class="MainPage">
+				<p><br></p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sx-2 col-sm-2"></div>
+                        <div class="col-md-8 col-sx-8 col-sm-8">
+                            <h4 align="center" style="margin-top: 2em;"> Grazie per averci contattato!</h4>
+                            <h6 align="center"> Ti risponderemo il prima possibile!</h6>
+			    <p align="center" style="margin-top: 2em;"> <img src="../Images/grazie.png" width=60%> </p>
+                        </div>
+                        <div class="col-md-2 col-sx-2 col-sm-2"></div>
+                    </div>
+                </div>
+                    <!--outer row-->
+                </div>
+                <!--container-->
+            </div>
+            <!--MainPage css-->
+        </div>
+        <!--content-->
+        <div id="footer"><p>&copy;Jos&eacute; de Arcos & Giorgia Grisot </p></div>
+    </div>
+    <!--wrapper-->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+    <script src="../javascript/validator-min.js"></script>
+	<script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script><!-- to parse the email -->
+	<script src="../javascript/app.js"></script><!--  to parse the email -->
+    <!-- in this order, needs jquery-->
+    <!-- To avoid the user submiting the form pressing enter -->
+	
+	<script>
+	 // DOM ready
+	 $(function() {
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Vai a ..."
+      }).appendTo("#ciaco-nav select");
+
+	   // To make dropdown actually work
+	   // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+      $("#ciaco-nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+
+	 });
+	</script>
+</body>
+
+</html>
