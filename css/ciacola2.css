@@ -123,7 +123,7 @@ color: #111;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+@media all and (max-device-width: 960px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
   }
@@ -131,4 +131,16 @@ color: #111;
 
 .link_color {
     color: #fff;
+}
+
+#footer_address{
+	text-align:center;
+	margin-top:20px;
+	margin-left: 10px;
+}
+
+#footer_contacts{
+	text-align:center;
+	margin-top: 10px;
+	margin-right: 10px;
 }
