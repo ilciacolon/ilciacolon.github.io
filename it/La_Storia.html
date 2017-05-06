@@ -116,9 +116,9 @@
 			 <div class="col-md-1 col-sx-1 col-sm-1"></div>
                     </div>
                 </div>
-              <div class="row">
+              <div class="row" style="margin-left: 2em;">
                 <div class="col-md-2 col-sx-2 col-sm-2"></div>
-                <div class="col-md-8 col-sx-8 col-sm-8" style="margin-left: 2em;">
+                <div class="col-md-8 col-sx-8 col-sm-8">
                 <div class="dtcodes_main">  
                 <!-- DC Flickr Slider Start -->
                 <div id="dc_jflickr_slider_container">
@@ -144,7 +144,7 @@
                             // Small images: {{image_s}}
                             // Medium images: {{image}}
                             // Large images: {{image_b}}
-                            itemTemplate: '<li>' + '<a rel="colorbox" href="{{image_b}" title="{{title}}">' + '<img src="{{image_q}}" alt="{{title}}" />' + '</a>' + '</li>'
+                            itemTemplate: '<li>' + '<a rel="colorbox" href="{{image}}" title="{{title}}">' + '<img src="{{image_q}}" alt="{{title}}" />' + '</a>' + '</li>'
                     }, function(data) {
                             $('#jflickr_cbox a').colorbox();
                     });
