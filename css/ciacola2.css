@@ -122,10 +122,19 @@ color: #111;
 	overflow:hidden;
 }
 
+.tipi_img
+{
+	min-width:80vw;
+	width:60%;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
-@media all and (max-device-width: 960px) {
+@media  all and (max-device-width: 960px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
+  }
+  .tipi_img{
+	width:80%;
   }
 }
 
