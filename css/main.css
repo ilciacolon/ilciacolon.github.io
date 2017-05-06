@@ -569,7 +569,7 @@ a {
 	;
 	position: absolute;
 	text-align: right;
-	left: -50%;
+	left: -10%;
 	-webkit-transition: all 2s ease;
 	-moz-transition: all 2s ease;
 	-o-transition: all 2s ease;
@@ -956,6 +956,33 @@ img.hover-shadow {
 --------------------------------------------- */
 @media all and (max-width : 960px) {
 	
+	.address_message {
+	color: #7f7bb8;
+	/* #090274*/
+	;
+	position: absolute;
+	text-align: right;
+	left: -45%;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+.phone_message {
+	color: #7f7bb8;
+	/* #090274*/
+	;
+	position: absolute;
+	text-align: left;
+	left: 0%;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+
 	#some-element { display: none; }
 	 
 	#ciaco-nav{
