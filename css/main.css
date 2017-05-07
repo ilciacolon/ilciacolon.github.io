@@ -435,7 +435,6 @@ label.valid {
 	display:none;
 }
 .open.hidden-menu select{
-
 	margin: 0 0 0 0;
 	z-index:-10;
 }
@@ -886,8 +885,9 @@ img.hover-shadow {
 
 #ciaco-nav{
 	 margin-top: 0.5em;
-	 margin-left: 20vw;
+	 left:20vw;
 	 width:80%;
+	 text-align:center;
 }
 
 #ciaco-nav>li>a{
@@ -898,10 +898,10 @@ img.hover-shadow {
 #ciaco-nav select{
 	display: none;
 	margin: 0 0 0 0;
-		font-size:calc(0.1em + 0.5vw);
-		background-color: #090274;
-		color:white;
-		height:5vh;
+	font-size:calc(0.1em + 0.5vw);
+	background-color: #090274;
+	color:white;
+	height:5vh;
 }
 
 .nav {
@@ -954,53 +954,54 @@ img.hover-shadow {
 
 /* Media Queries
 --------------------------------------------- */
-@media all and (max-width : 960px) {
+@media all and (max-width : 1200px) {
+	
+	#some-element { display: none; }
 	
 	.address_message {
-	color: #7f7bb8;
-	/* #090274*/
-	;
-	position: absolute;
-	text-align: right;
-	left: -45%;
-	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
-	-o-transition: all 2s ease;
-	transition: all 2s ease;
-}
-
-.phone_message {
-	color: #7f7bb8;
-	/* #090274*/
-	;
-	position: absolute;
-	text-align: left;
-	left: 0%;
-	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
-	-o-transition: all 2s ease;
-	transition: all 2s ease;
-}
-
-
-	#some-element { display: none; }
-	 
+		color: #7f7bb8;
+		/* #090274*/
+		;
+		position: absolute;
+		text-align: right;
+		left: -45%;
+		-webkit-transition: all 2s ease;
+		-moz-transition: all 2s ease;
+		-o-transition: all 2s ease;
+		transition: all 2s ease;
+	}
+	
+	.phone_message {
+		color: #7f7bb8;
+		/* #090274*/
+		;
+		position: absolute;
+		text-align: left;
+		left: 0%;
+		-webkit-transition: all 2s ease;
+		-moz-transition: all 2s ease;
+		-o-transition: all 2s ease;
+		transition: all 2s ease;
+	}
+		 
 	#ciaco-nav{
 		margin-top: 0;
 		margin-right: 0;
 		width:110%;
 	}
+	
 	#ciaco-nav ul {display:none;}
+	
 	#ciaco-nav select{
 		display:inline-block;
 	}
 	
 	#ciaco-logo img
 	{
-	margin-bottom:-60px;/*To center*/
-	/*margin-bottom:1vmin;*/
-	height:calc(3em + 0.5vw);
-	/*height:8.9vh;*/
+		margin-bottom:-60px;/*To center*/
+		/*margin-bottom:1vmin;*/
+		height:calc(3em + 0.5vw);
+		/*height:8.9vh;*/
 	}
 	
 	.circle ul {display:none;}
@@ -1017,10 +1018,8 @@ img.hover-shadow {
 		font-size:calc(0.7em + 0.5vw);
 		background-color: #090274;
 		color:white;
-
 		opacity:1;
 		z-index: 1000;
 	}
-	
 }
 
