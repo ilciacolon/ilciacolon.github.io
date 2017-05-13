@@ -979,7 +979,7 @@ img.hover-shadow {
 
 /* Media Queries
 --------------------------------------------- */
-@media all and (max-width : 1200px) {
+@media all and (max-width : 768px) {
 	
 	.address_message {
 		left: -50%;
@@ -1001,7 +1001,10 @@ img.hover-shadow {
 		left:-15%;
 	}
 	#some-element { display: none; }
-		 
+}
+
+@media all and (max-width: 1200px)
+{
 	#ciaco-nav{
 		margin-top: 0;
 		margin-right: 0;
