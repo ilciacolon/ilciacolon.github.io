@@ -10,7 +10,7 @@
 
     <title>Il Ciacolon</title>
 </head>
-<body>
+<body id="BodyID" background="./Images/piatto.jpg" style="background-size: 100vw; background-position: center;background-blend-mode: lighten;">
     <div id="wrapper">
         <div id="header-main"></div>
         <div id="content-main">
@@ -19,7 +19,7 @@
                     <ul id="nav" class="circular-list navbar-default">
                         <li><a href="./it/Il_Nostro_Chef.html">I Nostri Chef</a>
                         </li>
-                        <li><a href="./it/la_ciacola.html" > <img style="height: 20vh" src="./Images/logo_Ciacola_lg.png"/> </a>
+                        <li><a href="./it/la_ciacola.html" > <img style="height: 20vh" src="./Images/logo_Ciacola_sm.png"/> </a>
                         </li>
                         <li><a href="./it/Menu.html">Men&uacute</a>
                         </li>
@@ -55,11 +55,11 @@
             </div>
             <div class="info_placement">
                  <div class="address_message text-center">
-                    <img style="margin-top:3px" class="pull-right" src="./Images/FlagIcons/address-32.png" alt="Address icon" /> <a href="./it/Contatti.html">Viale XXV Aprile 11
-					<br> 10133 Torino</a>
+                    <img style="margin-top:3px" class="pull-right" src="./Images/FlagIcons/address-32.png" alt="Address icon" /> <a href="./it/Contatti.html"><strong>Viale XXV Aprile 11
+		    <br> 10133 Torino<strong></a>
                 </div>
-                <p class="phone_message text-center"><img src="./Images/FlagIcons/telephone-16.png" alt="e-mail icon"/> (+39) 011 6610911
-                    <br><img src="./Images/FlagIcons/email-16.png"/> <a href="./it/Contatti.html" alt="Contact icon">prenotazioni@ilciacolon.it</a>
+                <p class="phone_message text-center"><img src="./Images/FlagIcons/telephone-16.png" alt="e-mail icon"/> <a><strong>(+39) 011 6610911</strong></a>
+                    <br><img src="./Images/FlagIcons/email-16.png"/> <a href="./it/Contatti.html" alt="Contact icon"><strong>prenotazioni@ilciacolon.it</strong></a>
                 </p>
             </div>
         </div>
@@ -87,16 +87,10 @@
 		};
 		var small =
 		{
-				height: "25vw",
+				height: "22vw",
 		};
 			
 		if (!is_mobile) {
-			var left = {
-				left: "-45%" 
-			};
-			var right = {
-				left: "35%"
-			};
 				
 			var radius = 35;
 			var $items = $('.circle a');
@@ -107,15 +101,7 @@
 				$(this).css('top', 50 + radius * Math.sin(-0.5 * Math.PI - 2 * (1 / numitems) * index * Math.PI).toFixed(4) + '%');
 			});
 		}
-		else
-		{
-			var left = {
-				left: "-45%" 
-			};
-			var right = {
-				left: "15%"
-			};
-		}
+
 		/*Draw circle menu*/
 		var countcircle = 1;
 
@@ -133,8 +119,9 @@
 			/*This moves the address and the phone to the sides*/
 				
 			if (counter == 1) {
-				$('.phone_message').animate(left);
-				$('.address_message').animate(right);
+                            
+                            	$('.phone_message').toggleClass('open');
+                                $('.address_message').toggleClass('open');
 				counter = 0;
 				}
 			},
@@ -145,7 +132,10 @@
 		});
 		/*Hide Enter message when circle menu is open*/
 		var number_click = 1;
-
+                var BackgroundImage = document.getElementById('BodyID');
+                
+                BackgroundImage.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+                
 		$('.menu-button').on('click', function(event) {
 			event.preventDefault();
 			$(this).toggleClass('open');
@@ -153,9 +143,9 @@
 			$('.hidden-menu').toggleClass('open');
 			$(this).trigger("mouseleave");
 
-			if (number_click == 1) {
-				$(this).unbind("mouseenter mouseleave");
-			} else {
+                        BackgroundImage.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+
+			if (number_click == 0) {
 				$(this).bind({
 					mouseenter: function(e) {
 					if (countcircle ==1) {
@@ -166,8 +156,15 @@
 						name.innerHTML = '';
 					}
 				});
+                                number_click=1;
+
+			} else {
+                            BackgroundImage.style.backgroundColor = 'rgba(255, 255, 255,0.3)';
+
+                            $(this).unbind("mouseenter mouseleave");
+
+			    number_click = 0;
 			}
-			number_click=0;
 		});
 		$(function() {
 			$("[data-toggle='tooltip']").tooltip();

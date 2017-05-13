@@ -81,13 +81,13 @@ color: #111;
 
 #ciaco-logo
 {
-	left: calc(50% - 152px);/*To center*/
+	left: calc(50% - 135px);/*To center*/
 	margin-top:0.2em;
 }
 
 #ciaco-logo img
 {
-	height:75px;
+	height:70px;
 }
 
 .nav {
