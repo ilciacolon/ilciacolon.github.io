@@ -202,46 +202,50 @@ body {
 .MainPage h1 {
 	font: 100 60px 'HomemadeApple';
 	color: #090274;
-	font-size: 5vw;
+	font-size:calc(24px + 2.5vw);
+
 }
 
 .MainPage h2 {
 	font: 100 45px 'HomemadeApple';
-	font-size: 6vh;
+	font-size:calc(24px + 3vw);
 }
 
 .MainPage h3 {
 	font: 100 30px 'HomemadeApple';
-	font-size: 5vh;
+	font-size:calc(24px + 2.5vw);
 }
 
 .MainPage h4 {
 	font: 100 18px 'Roboto Bold';
-	font-size: 3vmin;
+	font-size:calc(16px + 0.45vw);
+		line-height: 1.5em;	
+
 	color: #090274;
 }
 
 .MainPage h5 {
 	font: 100 14px 'Roboto Reg';
-	font-size: 2.8vmin;
+	font-size:calc(12px + 0.45vw);
+
 	color: #090274;
 }
 
 .MainPage h6 {
 	font: 100 14px 'Roboto Reg';
-	font-size: 2.8vmin;
+	font-size:calc(12px + 0.45vw);
+
 }
 
 .MainPage p {
 	font: 100 18px 'Roboto Reg'; /*font: 100 17px 'EB Garamond', Helvetica, sans-serif;*/
-	
 	font-size:calc(12px + 0.5vw);
+	line-height: 1.5em;	
 }
 
 .MainPage a {
 	font: 100 18px 'Roboto Reg';
-	font-size: 3vmin;
-
+	font-size:calc(12px + 0.5vw);
 }
 
 
@@ -972,12 +976,12 @@ img.hover-shadow {
 	opacity: 0.8;
 }
 
-
-
 /* Media Queries
 --------------------------------------------- */
 @media all and (max-width : 768px) {
 	
+	#some-element { display: none; }
+
 	.address_message {
 		left: -80%;
 		font-size:0.8em;
@@ -999,10 +1003,10 @@ img.hover-shadow {
 	#benvenuti_message {
 		left:-15%;
 	}
-	#some-element { display: none; }
 	
 	.info_placement {
 		width: 50vw;
+		font-size:0.8em;
 	}
 }
 
@@ -1046,4 +1050,3 @@ img.hover-shadow {
 		z-index: 1000;
 	}
 }
-
