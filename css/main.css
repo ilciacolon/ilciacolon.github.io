@@ -927,7 +927,9 @@ img.hover-shadow {
 	font-size:calc(0.1em + 0.5vw);
 	background-color: #090274;
 	color:white;
-	height:5vh;
+	height: 5vh;
+	max-height:3.5em;
+	margin-right: 10em;
 }
 
 .nav {
@@ -1026,9 +1028,9 @@ img.hover-shadow {
 	
 	#ciaco-logo img
 	{
-		margin-bottom:-60px;/*To center*/
+		margin-bottom:-40px;/*To center*/
 		/*margin-bottom:1vmin;*/
-		height:calc(3em + 0.5vw);
+		height:calc(4em + 0.5vw);
 		/*height:8.9vh;*/
 	}
 	
