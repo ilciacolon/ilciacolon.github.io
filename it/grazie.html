@@ -15,12 +15,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css" type="text/css" />
 <!--    <link rel="stylesheet" href="../jquery.motionCaptcha.0.2.css" type="text/css" />
--->    <link rel="shortcut icon" href="../Images/FlagIcons/ciacolon_icon.ico">
+--> <link rel="shortcut icon" href="../Images/FlagIcons/ciacolon_icon.ico">
 
     <title>Grazie</title>
-	
-	    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC8fPLLbvl7koZn-KwzMBBVzc75i3xBivM"></script>
+    <script>
+	 // DOM ready
+	 $(function() {
 
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Vai a..."
+      }).appendTo("#ciaco-nav select");
+
+	   // To make dropdown actually work
+	   // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+      $("#ciaco-nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+
+	 });
+    </script>
 </head>
 
 <body>
@@ -88,9 +104,6 @@
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
-    <script src="../javascript/validator-min.js"></script>
-	<script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script><!-- to parse the email -->
-	<script src="../javascript/app.js"></script><!--  to parse the email -->
     <!-- in this order, needs jquery-->
     <!-- To avoid the user submiting the form pressing enter -->
 	
