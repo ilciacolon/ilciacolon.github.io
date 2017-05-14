@@ -115,13 +115,12 @@
 			/*This shows the message Enter*/
 			name.innerHTML = 'Entra';
 			/*This moves the address and the phone to the sides*/
-				
 			if (counter == 1) {
                             
-                            	$('.phone_message').toggleClass('open');
-                                $('.address_message').toggleClass('open');
+                $('.phone_message').toggleClass('open');
+                $('.address_message').toggleClass('open');
 				counter = 0;
-				}
+			}
 			},
 			mouseleave: function(e) {
 				/*This hides the message Enter*/
@@ -172,7 +171,6 @@
 	<script>
 	 // DOM ready
 	 $(function() {
-
      $("<option />", {
          "selected": "selected",
          "value"   : "",
@@ -185,7 +183,6 @@
       $(".hidden-menu select").change(function() {
         window.location = $(this).find("option:selected").val();
       });
-
 	 });
     </script>
 </body>

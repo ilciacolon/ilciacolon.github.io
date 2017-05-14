@@ -980,10 +980,12 @@ img.hover-shadow {
 	
 	.address_message {
 		left: -80%;
+		font-size:0.8em;
 	}
 	
 	.phone_message {
 		left:10%;
+		font-size:0.8em;
 	}
 	
 	.open.address_message {
