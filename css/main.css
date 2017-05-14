@@ -562,7 +562,6 @@ a {
 }
 
 .address_message {
-
 	position: absolute;
 	text-align: right;
 	left: -7vw;
@@ -576,11 +575,9 @@ a {
 .address_message a{
 	 color: white;
 	 text-shadow: -1.3px 0 #090274, 0 1.3px #090274, 1.3px 0 #090274, 0 -1.3px #090274;
-
 }
 
 .open.address_message {
-
 	left:40vw;
 	-webkit-transition: all 2s ease;
 	-moz-transition: all 2s ease;
@@ -589,7 +586,6 @@ a {
 }
 
 .phone_message {
-	
 	position: absolute;
 	text-align: left;
 	left:7%;
@@ -597,6 +593,7 @@ a {
 	-moz-transition: all 2s ease;
 	-o-transition: all 2s ease;
 	transition: all 2s ease;
+	z-index:1000;
 }
 .phone_message a{
 	color: white;
