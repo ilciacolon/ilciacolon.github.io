@@ -514,7 +514,7 @@ label.valid {
 .info_placement {
 	position: absolute;
 	top: 85%;
-	width: calc(50vw);
+	width: 100vw;
 	left: 46vw;
 }
 
@@ -982,7 +982,7 @@ img.hover-shadow {
 @media all and (max-width : 768px) {
 	
 	.address_message {
-		left: -50%;
+		left: -80%;
 	}
 	
 	.phone_message {
@@ -990,7 +990,7 @@ img.hover-shadow {
 	}
 	
 	.open.address_message {
-		left: 38%;
+		left: 20%;
 	}
 	
 	.open.phone_message {
@@ -1001,6 +1001,10 @@ img.hover-shadow {
 		left:-15%;
 	}
 	#some-element { display: none; }
+	
+	.info_placement {
+		width: 50vw;
+	}
 }
 
 @media all and (max-width: 1200px)
