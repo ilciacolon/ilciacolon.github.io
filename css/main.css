@@ -909,7 +909,7 @@ img.hover-shadow {
 }
 
 #ciaco-nav{
-	 margin-top: 0.5em;
+	 
 	 left:20vw;
 	 width:80%;
 	 text-align:center;
@@ -927,6 +927,8 @@ img.hover-shadow {
 	background-color: #090274;
 	color:white;
 	height:5vh;
+	max-height: 3.5em;
+	margin-right: 30vw;
 }
 
 .nav {
