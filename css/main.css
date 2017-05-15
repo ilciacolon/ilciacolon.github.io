@@ -955,6 +955,8 @@ img.hover-shadow {
 	position: absolute;
 	left: 10%;
 	margin-top: 1vh;
+	max-width:171px;
+	width:200px;
 }
 
 .facebook-buttons{
