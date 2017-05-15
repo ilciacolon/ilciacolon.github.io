@@ -951,6 +951,13 @@ img.hover-shadow {
  display: inline;
 }
 
+#TripAdvisorIcon
+{
+	margin-top:-2px;
+	width:53px;
+	height:22px;
+}
+
 .container-facebook {
 	position: absolute;
 	left: 10%;
