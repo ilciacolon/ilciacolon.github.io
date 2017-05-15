@@ -273,9 +273,10 @@ body {
 	color: #090274;
 	font-size: 13.5px;
 	/*font-size: 1vmin;*/
-
 	font-weight: 500;
 	text-transform: uppercase;
+	height:2em;
+	z-index:1050;
 }
 
 .nav li {
@@ -569,56 +570,6 @@ video {
 a {
     color: #7f7bb8;
 }
-
-.address_message {
-	position: absolute;
-	text-align: right;
-	left: -7vw;
-	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
-	-o-transition: all 2s ease;
-	transition: all 2s ease;
-	z-index:1000;
-}
-
-.address_message a{
-	 color: white;
-	 text-shadow: -1.3px 0 #090274, 0 1.3px #090274, 1.3px 0 #090274, 0 -1.3px #090274;
-}
-
-.open.address_message {
-	left:40vw;
-	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
-	-o-transition: all 2s ease;
-	transition: all 2s ease;
-}
-
-.phone_message {
-	position: absolute;
-	text-align: left;
-	left:7%;
-	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
-	-o-transition: all 2s ease;
-	transition: all 2s ease;
-	z-index:1000;
-}
-.phone_message a{
-	color: white;
-	text-shadow: -1.3px 0 #090274, 0 1.3px #090274, 1.3px 0 #090274, 0 -1.3px #090274;
-
-}
-
-.open.phone_message {
-
-	left:-42vw;
-	-webkit-transition: all 2s ease;
-	-moz-transition: all 2s ease;
-	-o-transition: all 2s ease;
-	transition: all 2s ease;
-}
-
 
 /* Calendar */
 
@@ -914,6 +865,10 @@ img.hover-shadow {
 	/*height:8.9vh;*/
 }
 
+#ciacola-logo{
+	height: 20vh;
+}
+	
 #ciaco-nav{
 	 margin-top: 0.5em;
 	 left:20vw;
@@ -973,24 +928,76 @@ img.hover-shadow {
 	opacity: 0.8;
 }
 
+.address_message {
+	position: absolute;
+	text-align: right;
+	left: -7vw;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+	z-index:1000;
+}
+
+.address_message a{
+	 color: white;
+	 text-shadow: -1.3px 0 #090274, 0 1.3px #090274, 1.3px 0 #090274, 0 -1.3px #090274;
+}
+
+.open.address_message {
+	left:40vw;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+.phone_message {
+	position: absolute;
+	text-align: left;
+	left:7%;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+	z-index:1000;
+}
+.phone_message a{
+	color: white;
+	text-shadow: -1.3px 0 #090274, 0 1.3px #090274, 1.3px 0 #090274, 0 -1.3px #090274;
+}
+
+.open.phone_message {
+	left:-42vw;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+
 /* Media Queries
 --------------------------------------------- */
-@media all and (max-width : 768px) {
-	
-	#some-element { display: none; }
+/* iPad pro */
+
+@media only screen 
+and (max-device-height : 1400px) 
+and (max-device-width : 1024px)
+{
+	#ipad-element { display: none; }
 
 	.address_message {
-		left: -80%;
-		font-size:0.8em;
+		left: -30%;
+		font-size:1em;
 	}
 	
 	.phone_message {
-		left:10%;
-		font-size:0.8em;
+		left:20%;
+		font-size:1em;
 	}
 	
 	.open.address_message {
-		left: 20%;
+		left: 60%;
 	}
 	
 	.open.phone_message {
@@ -1003,12 +1010,163 @@ img.hover-shadow {
 	
 	.info_placement {
 		width: 50vw;
-		font-size:0.8em;
+		font-size:1em;
+	}
+	
+	#ciacola-logo{
+		height: 10vh; 
 	}
 }
 
-@media all and (max-width: 1200px)
+@media only screen 
+and (max-device-height : 1024px) 
+and (max-device-width : 1400px)
 {
+	.address_message {
+		left: -30%;
+		font-size:1em;
+	}
+	
+	.phone_message {
+		left:23%;
+		font-size:1em;
+	}
+	
+	.open.address_message {
+		left: 70%;
+	}
+	
+	.open.phone_message {
+		left:-75%;
+	}
+	
+	#benvenuti_message {
+		left:-15%;
+	}
+	
+	.info_placement {
+		width: 50vw;
+		font-size:1em;
+	}
+	
+	#ciacola-logo{
+		height: 10vw; 
+	}
+}
+
+/* iPad */
+@media only screen 
+and (max-device-height : 768px) 
+and (max-device-width : 1024px)
+{
+	
+	#ipad-element { display: none; }
+
+	.address_message {
+		left: -30%;
+		font-size:1em;
+	}
+	
+	.phone_message {
+		left:12%;
+		font-size:1em;
+	}
+	
+	.open.address_message {
+		left: 55%;
+	}
+	
+	.open.phone_message {
+		left:-75%;
+	}
+	
+	#benvenuti_message {
+		left:-15%;
+	}
+	
+	.info_placement {
+		width: 50vw;
+		font-size:1em;
+	}
+}
+
+@media only screen
+and (max-device-height : 1024px) 
+and (max-device-width : 768px)
+{
+	#ciacola-logo{
+		height: 10vh; 
+	}
+	
+		#ipad-element { display: none; }
+
+	.address_message {
+		left: -30%;
+		font-size:1em;
+	}
+	
+	.phone_message {
+		left:12%;
+		font-size:1em;
+	}
+	
+	.open.address_message {
+		left: 55%;
+	}
+	
+	.open.phone_message {
+		left:-75%;
+	}
+	
+	#benvenuti_message {
+		left:-15%;
+	}
+	
+	.info_placement {
+		width: 50vw;
+		font-size:1em;
+	}
+}
+
+/*Bigger Phones*/
+@media all and (max-width : 500px) and (max-height: 800px) {
+	
+	.address_message {
+		left: -75%;
+		font-size:0.9em;
+	}
+	
+	.phone_message {
+		left: 18%;
+		font-size:0.9em;
+	}
+	
+	.open.address_message {
+		left: 18%;
+	}
+	
+	.open.phone_message {
+		left:-75%;
+	}
+	
+	#benvenuti_message {
+		left:-15%;
+	}
+	
+	.info_placement {
+		width: 50vw;
+		font-size:0.9em;
+	}
+	/*Hide circle and show a button*/
+	#benvenuti_message {
+		left:-15%;
+	}
+	
+	.info_placement {
+		width: 50vw;
+		font-size:0.9em;
+	}
+	
 	#ciaco-nav{
 		margin-top: 0;
 		margin-right: 0;
@@ -1039,7 +1197,7 @@ img.hover-shadow {
 		top:15%;
 		left:40%;
 		width:20%;
-		height:5%;
+		height:2em;
 		font-size:calc(0.7em + 0.5vw);
 		background-color: #090274;
 		color:white;
@@ -1047,3 +1205,227 @@ img.hover-shadow {
 		z-index: 1000;
 	}
 }
+
+@media all and (max-height : 500px) and (max-width:800px){
+	
+	.address_message {
+		left: -75%;
+		font-size:0.9em;
+	}
+	
+	.phone_message {
+		left:53%;
+		font-size:0.9em;
+	}
+	
+	.open.address_message {
+		left: 53%;
+	}
+	
+	.open.phone_message {
+		left:-75%;
+	}
+	/*Hide circle and show a button*/
+	#benvenuti_message {
+		left:-15%;
+	}
+	
+	.info_placement {
+		width: 50vw;
+		font-size:0.9em;
+	}
+	
+	#ciaco-nav{
+		margin-top: 0;
+		margin-right: 0;
+		width:110%;
+	}
+	
+	#ciaco-nav ul {display:none;}
+	
+	#ciaco-nav select{
+		display:inline-block;
+	}
+	
+	#ciaco-logo img
+	{
+		margin-bottom:-40px;/*To center*/
+		/*margin-bottom:1vmin;*/
+		height:calc(4em + 0.5vw);
+		/*height:8.9vh;*/
+	}
+	
+	.circle ul {display:none;}
+	
+	.circular-list {display:none;}
+	
+	.open.hidden-menu select{
+		display: inline-block;
+		position:absolute;
+		top:15%;
+		left:40%;
+		width:20%;
+		height:2em;
+		font-size:calc(0.7em + 0.5vw);
+		background-color: #090274;
+		color:white;
+		opacity:1;
+		z-index: 1000;
+	}
+}
+
+/*Narrow Phones such us iPhone 5*/
+@media all and (max-width : 320px) and (max-height:600px)
+{
+	.address_message {
+		left: -75%;
+		font-size:0.9em;
+	}
+	
+	.phone_message {
+		left:8%;
+		font-size:0.9em;
+	}
+	
+	.open.address_message {
+		left: 8%;
+	}
+	
+	.open.phone_message {
+		left:-75%;
+	}
+	
+	#benvenuti_message {
+		left:-15%;
+	}
+	
+	.info_placement {
+		width: 50vw;
+		font-size:0.9em;
+	}
+	/*Hide circle and show a button*/
+	#benvenuti_message {
+		left:-15%;
+	}
+	
+	.info_placement {
+		width: 50vw;
+		font-size:0.9em;
+	}
+	
+	#ciaco-nav{
+		margin-top: 0;
+		margin-right: 0;
+		width:110%;
+	}
+	
+	#ciaco-nav ul {display:none;}
+	
+	#ciaco-nav select{
+		display:inline-block;
+	}
+	
+	#ciaco-logo img
+	{
+		margin-bottom:-40px;/*To center*/
+		/*margin-bottom:1vmin;*/
+		height:calc(4em + 0.5vw);
+		/*height:8.9vh;*/
+	}
+	
+	.circle ul {display:none;}
+	
+	.circular-list {display:none;}
+	
+	.open.hidden-menu select{
+		display: inline-block;
+		position:absolute;
+		top:15%;
+		left:40%;
+		width:20%;
+		height:2em;
+		font-size:calc(0.7em + 0.5vw);
+		background-color: #090274;
+		color:white;
+		opacity:1;
+		z-index: 1000;
+	}
+}
+
+@media all and (max-height : 320px) and (max-width:600px){
+	
+	.address_message {
+		left: -40%;
+		font-size:0.9em;
+	}
+	
+	.phone_message {
+		left:8%;
+		font-size:0.9em;
+	}
+	
+	.open.address_message {
+		left: 50%;
+	}
+	
+	.open.phone_message {
+		left:-75%;
+	}
+	
+	#benvenuti_message {
+		left:-15%;
+	}
+	
+	.info_placement {
+		width: 50vw;
+		font-size:0.9em;
+	}
+	/*Hide circle and show a button*/
+	#benvenuti_message {
+		left:-15%;
+	}
+	
+	.info_placement {
+		width: 50vw;
+		font-size:0.9em;
+	}
+	
+	#ciaco-nav{
+		margin-top: 0;
+		margin-right: 0;
+		width:110%;
+	}
+	
+	#ciaco-nav ul {display:none;}
+	
+	#ciaco-nav select{
+		display:inline-block;
+	}
+	
+	#ciaco-logo img
+	{
+		margin-bottom:-40px;/*To center*/
+		/*margin-bottom:1vmin;*/
+		height:calc(4em + 0.5vw);
+		/*height:8.9vh;*/
+	}
+	
+	.circle ul {display:none;}
+	
+	.circular-list {display:none;}
+	
+	.open.hidden-menu select{
+		display: inline-block;
+		position:absolute;
+		top:15%;
+		left:40%;
+		width:20%;
+		height:2em;
+		font-size:calc(0.7em + 0.5vw);
+		background-color: #090274;
+		color:white;
+		opacity:1;
+		z-index: 1000;
+	}
+}
+
