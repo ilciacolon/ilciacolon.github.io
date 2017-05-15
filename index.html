@@ -34,7 +34,7 @@
                     </ul>
                 </ul>
             </div>
-            <div class = "hidden-menu">
+            <div class = "hidden-menu-index">
                 <select>
                     <option value="./it/la_ciacola.html">La Ciacola</option> 
                     <option value="./it/Menu.html">Men&uacute;</option> 
@@ -46,7 +46,7 @@
                 </select>
             </div>
 			<div id="ipad-element"></div>
-			<div id="ipad-element-wide"></div>
+			<div id="big-screen-element"></div>
             <div class="menu-button">
                 <img alt="Ciacolon logo" id="logo" src="./Images/blu2.png"/>
             </div>
@@ -72,9 +72,14 @@
     <script defer>
     $(document).ready(function() {
 		var is_ipad = false;
-		var is_ipad_wide = false;
+		var is_big = false;
+		
 		if( $('#ipad-element').css('display')=='none') {
 			is_ipad = true;       
+		}
+
+		if( $('#big-screen-element').css('display')=='none') {
+			is_big = true;       
 		}
 
 		var name = document.getElementById('benvenuti_message');		
@@ -92,23 +97,21 @@
 		};
 			
 		var radius = 35;
-			var $items = $('.circle a');
-			var numitems = $items.length;
+		var $items = $('.circle a');
+		var numitems = $items.length;
 		
-			$items.each(function(index) {
-				$(this).css('left', 50 - radius * Math.cos(-0.5 * Math.PI - 2 * (1 / numitems) * index * Math.PI).toFixed(4) + '%');
-				$(this).css('top', 50 + radius * Math.sin(-0.5 * Math.PI - 2 * (1 / numitems) * index * Math.PI).toFixed(4) + '%');
-			});
 		if (is_ipad) {
-			var radius = 24;
-			var $items = $('.circle a');
-			var numitems = $items.length;
+			radius = 24;
+		}
 		
-			$items.each(function(index) {
+		if (is_big) {
+            radius = 40;
+        }
+		
+		$items.each(function(index) {
 				$(this).css('left', 50 - radius * Math.cos(-0.5 * Math.PI - 2 * (1 / numitems) * index * Math.PI).toFixed(4) + '%');
 				$(this).css('top', 50 + radius * Math.sin(-0.5 * Math.PI - 2 * (1 / numitems) * index * Math.PI).toFixed(4) + '%');
-			});
-		}
+		});
 
 		/*Draw circle menu*/
 		var countcircle = 1;
@@ -147,7 +150,7 @@
 			event.preventDefault();
 			$(this).toggleClass('open');
 			$('.circle').toggleClass('open');
-			$('.hidden-menu').toggleClass('open');
+			$('.hidden-menu-index').toggleClass('open');
 			$(this).trigger("mouseleave");
 
                         BackgroundImage.style.backgroundColor = 'rgba(255, 255, 255, 0)';
@@ -185,12 +188,12 @@
          "selected": "selected",
          "value"   : "",
          "text"    : "Vai a ..."
-      }).appendTo(".hidden-menu select");
+      }).appendTo(".hidden-menu-index select");
       // Create default option "Go to..."
 
 	   // To make dropdown actually work
 	   // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
-      $(".hidden-menu select").change(function() {
+      $(".hidden-menu-index select").change(function() {
         window.location = $(this).find("option:selected").val();
       });
 	 });
