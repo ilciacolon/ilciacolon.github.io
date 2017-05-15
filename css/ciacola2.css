@@ -106,7 +106,7 @@ color: #111;
 }
 
 .nav li {
- display: inline;
+ 	display: inline;
 }
 
 .container-facebook {
@@ -136,6 +136,13 @@ color: #111;
   .tipi_img{
 	width:80%;
   }
+  
+	#ciaco-logo
+	{
+		left: calc(50% - 138px);/*To center*/
+		margin-top:0.2em;
+	}
+
 }
 
 .link_color {
