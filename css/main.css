@@ -1028,8 +1028,8 @@ and (min-device-width : 1920px)
 
 /* iPad pro */
 @media all
-and (max-device-height : 1400px) 
-and (max-device-width : 1024px)
+and (min-device-height:1366px) 
+and (max-device-width:1024px)
 {
 	#ipad-element { display: none; }
 
@@ -1063,11 +1063,49 @@ and (max-device-width : 1024px)
 	#ciacola-logo{
 		height: 10vh; 
 	}
+	
+	#ciaco-nav{
+		margin-top: 0;
+		margin-right: 0;
+		width:110%;
+	}
+	
+	#ciaco-nav ul {display:none;}
+	
+	#ciaco-nav select{
+		display:inline-block;
+	}
+	
+	#ciaco-logo img
+	{
+		margin-bottom:-40px;/*To center*/
+		/*margin-bottom:1vmin;*/
+		height:calc(4em + 0.5vw);
+		/*height:8.9vh;*/
+	}
+	
+	.circle ul {display:none;}
+	
+	.circular-list {display:none;}
+	
+	.open.hidden-menu-index select{
+		display: inline-block;
+		position:absolute;
+		top:15%;
+		left:40%;
+		width:20%;
+		height:2em;
+		font-size:calc(0.7em + 0.5vw);
+		background-color: #090274;
+		color:white;
+		opacity:1;
+		z-index: 1000;
+	}
 }
 
 @media all
-and (max-device-height : 1024px) 
-and (max-device-width : 1400px)
+and (max-device-height:1024px) 
+and (max-device-width:1400px)
 {
 	.address_message {
 		left: -30%;
@@ -1103,10 +1141,9 @@ and (max-device-width : 1400px)
 
 /* iPad */
 @media all 
-and (max-device-height : 768px) 
-and (max-device-width : 1024px)
+and (max-device-height:768px) 
+and (max-device-width:1024px)
 {
-	
 	#ipad-element { display: none; }
 
 	.address_message {
@@ -1149,11 +1186,31 @@ and (max-device-width : 1024px)
 		opacity:1;
 		z-index: 1000;
 	}
+	
+	#ciaco-nav{
+		margin-top: 0;
+		margin-right: 0;
+		width:110%;
+	}
+	
+	#ciaco-nav ul {display:none;}
+	
+	#ciaco-nav select{
+		display:inline-block;
+	}
+	
+	#ciaco-logo img
+	{
+		margin-bottom:-40px;/*To center*/
+		/*margin-bottom:1vmin;*/
+		height:calc(4em + 0.5vw);
+		/*height:8.9vh;*/
+	}
 }
 
 @media all
-and (max-device-height : 1024px) 
-and (max-device-width : 768px)
+and (max-device-height:1024px) 
+and (max-device-width:768px)
 {
 	
 	#ipad-element { display: none; }
@@ -1202,10 +1259,49 @@ and (max-device-width : 768px)
 		opacity:1;
 		z-index: 1000;
 	}
+	
+		#ciaco-nav{
+		margin-top: 0;
+		margin-right: 0;
+		width:110%;
+	}
+	
+	#ciaco-nav ul {display:none;}
+	
+	#ciaco-nav select{
+		display:inline-block;
+	}
+	
+	#ciaco-logo img
+	{
+		margin-bottom:-40px;/*To center*/
+		/*margin-bottom:1vmin;*/
+		height:calc(4em + 0.5vw);
+		/*height:8.9vh;*/
+	}
+	
+	.circle ul {display:none;}
+	
+	.circular-list {display:none;}
+	
+	.open.hidden-menu-index select{
+		display: inline-block;
+		position:absolute;
+		top:15%;
+		left:40%;
+		width:20%;
+		height:2em;
+		font-size:calc(0.7em + 0.5vw);
+		background-color: #090274;
+		color:white;
+		opacity:1;
+		z-index: 1000;
+	}
 }
 
 /*Bigger Phones*/
-@media all and (max-width : 500px) and (max-height: 800px) {
+@media all and (max-width:500px) and (max-height:800px)
+{
 	
 	.address_message {
 		left: -75%;
@@ -1282,7 +1378,8 @@ and (max-device-width : 768px)
 	}
 }
 
-@media all and (max-height : 500px) and (max-width:800px){
+@media all and (max-height:500px) and (max-width:800px)
+{
 	
 	.address_message {
 		left: -75%;
@@ -1351,7 +1448,7 @@ and (max-device-width : 768px)
 }
 
 /*Narrow Phones such us iPhone 5*/
-@media all and (max-width : 320px) and (max-height:600px)
+@media all and (max-width:320px) and (max-height:600px)
 {
 	.address_message {
 		left: -75%;
@@ -1428,7 +1525,8 @@ and (max-device-width : 768px)
 	}
 }
 
-@media all and (max-height : 320px) and (max-width:600px){
+@media all and (max-height:320px) and (max-width:600px)
+{
 	
 	.address_message {
 		left: -40%;
