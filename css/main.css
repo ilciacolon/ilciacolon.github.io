@@ -883,6 +883,8 @@ img.hover-shadow {
 	 left:20vw;
 	 width:80%;
 	 text-align:center;
+	 white-space: nowrap;
+	 overflow: hidden;
 }
 
 #ciaco-nav>li>a{
