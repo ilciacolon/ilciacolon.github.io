@@ -862,6 +862,11 @@ img.hover-shadow {
  background-color: white;
 }
 
+#pills > .active > a, #pills > .active > a:hover {
+    background-color: #090274;
+	height: auto;
+}
+
 #ciaco-logo{
 	 margin: -25px 7%;
 }
