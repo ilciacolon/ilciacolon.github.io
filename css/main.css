@@ -991,6 +991,22 @@ img.hover-shadow {
 	transition: all 2s ease;
 }
 
+/* iFrame background in eventi page 
+.outer_iframe {
+    background-image: url('../Images/news/insolito.png');
+    width:100%;
+}
+.preview_image{
+    position: absolute;
+    z-index: 1;
+}
+.inner_iframe {
+    position: relative;
+}
+.iframe_file{
+    z-index: 1000;
+}
+*/
 
 /* Media Queries
 --------------------------------------------- */

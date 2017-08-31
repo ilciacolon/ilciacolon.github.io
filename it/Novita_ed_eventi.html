@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css" type="text/css" />
     <link rel="shortcut icon" href="../Images/FlagIcons/ciacolon_icon.ico">
+    <link rel="stylesheet" href="../css/w3.css">
+
 
     <title>Eventi e Novit&aacute;</title>
 
@@ -99,7 +101,9 @@
                             <div class="pill-wrapper">
                                 <ul style="position:relative; z-index: 0;" class="nav nav-pills nav-stacked col-md-1 col-xs-1 col-sm-1" id="pills">
                                     <li class="active"><a href="#Timeline" data-toggle="pill">Eventi</a>
-									</li>
+				    </li>
+				    <li><a href="#Dicono" data-toggle="pill">Dicono di noi</a>
+                                    </li>
                                     <li><a href="#Calendar" data-toggle="pill">Calendario</a>
                                     </li>
                                 </ul>
@@ -109,10 +113,74 @@
                                             <iframe style="margin-top:20px" src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AovzHudzxH0GdFdSaVVBeTdmbnBnN19FZlRfQ2VmYnc&font=Bevan-PotanoSans&maptype=toner&start_at_end=true&lang=it&height=650' width='100%' height='650' frameborder='0'></iframe>
                                         </div>
                                     </div>
+				    <div class="tab-pane" id="Dicono">
+                                        <div class="container" align="center">
+					      <div class="row">
+						<div class="col-md-1 col-xs-1 col-sm-1"></div>
+						<div class="col-md-10 col-xs-10 col-sm-10">
+						  <div class="w3-row-padding w3-margin-top">
+						    <div class="w3-half">
+						      <div class="w3-card-2">
+							<a href="http://www.untoccodizenzero.it/index.php/zenzero/news/dal-ciacolon-alla-ciacola-ma-resta-la-tradizione-in-cucina/" >
+							  <img src="../Images/news/zenzero.png" class="w3-padding w3-hover-opacity" style="width:100%">
+							</a>
+						      </div>
+						    </div>
+						    
+						    <div class="w3-half">
+						      <div class="w3-card-2">
+							<a href="http://www.eatpiemonte.com/la-ciacola-torino/" >
+							  <img src="../Images/news/eat_piemonte.png" class="w3-padding w3-hover-opacity" style="width:100%">
+							</a>
+						      </div>
+						    </div>
+						  </div>
+						  
+						  <div class="w3-row-padding w3-margin-top">
+						    <div class="w3-half">
+						      <div class="w3-card-2">
+							<a href="http://www.monsubarachin.it/it/la-ciacola/" >
+							  <img src="../Images/news/monsu.png" class="w3-padding w3-hover-opacity" style="width:100%">
+							</a>
+						      </div>
+						    </div>
+						    <div class="w3-half">
+						      <div class="w3-card-2">
+							<a href="http://www.linsolitoincitta.it/mangiare-torino/la-ciacola-gusti-tipici-veneti/" >
+							  <img src="../Images/news/insolito.png" class="w3-padding w3-hover-opacity" style="width:100%">
+							</a>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="w3-row-padding w3-margin-top">
+						    <div class="w3-half">
+						      <div class="w3-card-2">
+							<a href="http://www.compagniadeiviaggiatori.com/2017/06/torino-estate-si-mangia-in-collina.html" >
+							  <img src="../Images/news/compagnia.png" class="w3-padding w3-hover-opacity" style="width:100%">
+							</a>
+						      </div>
+						    </div>
+						    <div class="w3-half">
+ <!-- =====================================>           I tried to make the container the same size as the previous images (o simply use one of those images as
+						      "background") and then place the video on top but I failed :( -->
+						      <div class="w3-card-2">
+							<p>Intervista su <strong>Spazio Notizia</strong>: <br> Federica Ottella, 40 anni di ristorazione a Torino</p>
+							    <iframe src="https://www.youtube.com/embed/tS4KkQ88Rho?start=69"" frameborder="0" allowfullscreen></iframe>   
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<div class="col-md-1 col-xs-1 col-sm-1"></div>
+
+					      </div>
+					</div>
+                                    </div>
                                     <div class="tab-pane" id="Calendar">
+ <!-- =====================================>           We need to add some "border" on top of the calendar because on mobile devices it overlaps with the button.
+							Again, i failed :( -->
                                         <div class="calendar-container" align="center">
-											<iframe src="https://calendar.google.com/calendar/embed?src=pntlvgm5egsv3ao9nhfvvc8oi4%40group.calendar.google.com&ctz=Europe/Rome" style="border: 0" frameborder="0" scrolling="no" width="100%" height="800px"></iframe>
-										</div>
+					    <iframe src="https://calendar.google.com/calendar/embed?src=pntlvgm5egsv3ao9nhfvvc8oi4%40group.calendar.google.com&ctz=Europe/Rome" style="border: 0;" frameborder="0" scrolling="no" width="100%" height="800px"></iframe>
+					</div>
                                     </div>
                                 </div>
                             </div>
