@@ -41,39 +41,85 @@
 
 <body>
     <div id="wrapper">
-        <div id="header">
+	        <div id="header">
             <div class="nav">
-				<ul id="ciaco-logo">
-					<li>
-						<a href="../index.html"><img src="../Images/il_ciacolon_logo2.jpg"></a>
-					</li>
-				</ul>
+						<a href="../index.html"><img src="../Images/il_ciacolon_logo2.jpg" height=100%></a>
             </div>
             <div id="header-line"> </div>
         </div>
         <div id="content">
-			<div class="container-facebook">
-				<div class="row">
-					<div class="col-md-6 col-xs-6 col-sm-6">
-						<iframe id="facebook-buttons"  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Filciacolon&width=95&layout=button&action=like&size=small&show_faces=false&share=true&height=65&appId" width="96" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					</div>
-					<div class="col-md-6 col-xs-6 col-sm-6">
-						<a target="_blank" href="http://www.tripadvisor.com/Restaurant_Review-g187855-d743606-Reviews-Il_Ciacolon-Turin_Province_of_Turin_Piedmont.html"><img id="TripAdvisorIcon" src="../Images/TripAdvisorRate.png"/></a>
-					</div>
-				</div>
-			</div>
 			<div class="MainPage">
                 <div class="container">
-                    <div class="row" style="margin-top:5em">
-                        <div class="col-md-2 col-xs-2 col-sm-2"></div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-2 col-sm-2">		
+						</div>
                         <div class="col-md-8 col-xs-8 col-sm-8">
-                            <h2 align="center"> Natale </h2>
-                            <h6 align="center"> Details here </h6>
-							<p align="center" style="margin-top: 2em;"> <img src="http://www.planwallpaper.com/static/images/Merry_christmas-6.jpg" width=100%> </p>
+                            <h2 align="center"> Natale</h2>
+							
+							<p align="center" ><img src="http://www.planwallpaper.com/static/images/Merry_christmas-6.jpg" width=100%> </p>
+
+							<div class="row">
+								<div class="col-md-6 col-xs-6 col-sm-6">
+								    <h6 align="center">In una terra lontana, dietro le montagne Parole, lontani dalle terre di Vocalia e Consonantia, vivono i testi casuali. Vivono isolati nella cittadina di Lettere, sulle coste del Semantico, un immenso oceano linguistico. Un piccolo ruscello chiamato Devoto Oli attraversa quei luoghi, rifornendoli di tutte le regolalie di cui hanno bisogno. È una terra paradismatica, un paese della cuccagna in cui golose porzioni di proposizioni arrostite volano in bocca a chi le desideri. Non una volta i testi casuali sono stati dominati dall’onnipotente Interpunzione, una vita davvero non ortografica. Un giorno però accadde che la piccola riga di un testo casuale, di nome Lorem ipsum, decise di andare a esplorare la vasta Grammatica. Il grande Oximox tentò di dissuaderla, poiché quel luogo pullulava di virgole spietate, punti interrogativi selvaggi e subdoli punti e virgola, ma il piccolo testo casuale non si fece certo fuorviare. Raccolse le sue sette maiuscole, fece scorrere la sua iniziale nella cintura, e si mise in cammino. Quando superò i primi colli dei monti Corsivi, si voltò a guardare un’ultima volta la skyline di Lettere, la sua città, la headline del villaggio Alfabeto e la subline della sua stessa strada, il vicolo Riga. Una domanda retorica</h6>
+								</div>
+								<div class="col-md-6 col-xs-6 col-sm-6">
+									 <div class="col-md-12 col-xs-12 col-sm-12">
+									        <h4 align="center"> Scrivici</h4>
+
+											<!-- <form action="mailto:info@ilciacolon.it?subject=Messaggio da ilciacolon.it" method="post" enctype="text/plain" id="commentForm" data-toggle="validator" role="form"> -->
+                                            <form action="https://www.enformed.io/x1tbaba" method="POST" id="commentForm" data-toggle="validator" role="form">
+											<!-- <legend>Contact Form</legend> -->
+                                            <div class="form-group">
+                                                <label class="control-label">Nome</label>
+                                                <div class="controls">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                        <input id="name" type="text" class="form-control" name="Nome" placeholder="Name">
+														<input type="hidden" name="*redirect" value="http://www.ilciacolon.it/it/grazie.html" />
+														<input type="hidden" name="*honeypot" />
+														<input type="hidden" name="*subject" value="Messaggio da ilciacolon.it" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Telefono</label>
+                                                <div class="controls">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                                                        <input id="tel" type="text" class="form-control" name="Tel" placeholder="Telefono" data-error="Il telefono sembra incorretto." required>
+                                                    </div>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Email</label>
+                                                <div class="controls">
+                                                    <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" data-error="L'indirizzo email sembra incorretto." required>
+                                                    	<input type="hidden" name="*reply" value="email" />
+													</div>
+                                                    <div class="help-block with-errors"></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label">Messaggio</label>
+                                                <div class="controls">
+                                                    <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                                        <input type="text" id="msg" maxlength="300" name="Messaggio" class="form-control " rows="10" cols="78" placeholder="Lasciaci un messaggio e ti risponderemo al pi&uacute; presto"></textarea>
+                                                    </div> <span class="help-block with-errors">Fino a 300 caratteri.</span>
+                                                </div>
+                                            </div>
+                                            <div class="controls" style="margin: 0px 0px 3em 35%;">
+                                                <input style="margin-left: 12%;" type="submit" value="Invia">
+                                            </div>
+                                        </form>
+                                    </div>
+								</div>
+						</div>
                         </div>
                         <div class="col-md-2 col-xs-2 col-sm-2"></div>
                     </div>
-					                <div class="container">
+					<div class="container">
                     <div class="row">
                         <div class="col-md-2 col-xs-2 col-sm-2"></div>
                         <div class="col-md-8 col-xs-8 col-sm-8">
