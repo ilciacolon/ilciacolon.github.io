@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- You can use open graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url"           content="http://www.ilciacolon.it" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Il Ciacolon" />
+	<meta property="og:description"   content="Ristorante" />
+	<meta property="og:image"         content="http://www.ilciacolon.it/Images/blu2.png"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+<!--    <link rel="stylesheet" href="../jquery.motionCaptcha.0.2.css" type="text/css" />
+--> <link rel="shortcut icon" href="../Images/FlagIcons/ciacolon_icon.ico">
+
+    <title>Natale</title>
+    <script>
+	 // DOM ready
+	 $(function() {
+
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Vai a..."
+      }).appendTo("#ciaco-nav select");
+
+	   // To make dropdown actually work
+	   // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+      $("#ciaco-nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+
+	 });
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="nav">
+				<ul id="ciaco-logo">
+					<li>
+						<a href="../index.html"><img src="../Images/il_ciacolon_logo2.jpg"></a>
+					</li>
+				</ul>
+            </div>
+            <div id="header-line"> </div>
+        </div>
+        <div id="content">
+			<div class="container-facebook">
+				<div class="row">
+					<div class="col-md-6 col-xs-6 col-sm-6">
+						<iframe id="facebook-buttons"  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Filciacolon&width=95&layout=button&action=like&size=small&show_faces=false&share=true&height=65&appId" width="96" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					</div>
+					<div class="col-md-6 col-xs-6 col-sm-6">
+						<a target="_blank" href="http://www.tripadvisor.com/Restaurant_Review-g187855-d743606-Reviews-Il_Ciacolon-Turin_Province_of_Turin_Piedmont.html"><img id="TripAdvisorIcon" src="../Images/TripAdvisorRate.png"/></a>
+					</div>
+				</div>
+			</div>
+			<div class="MainPage">
+                <div class="container">
+                    <div class="row" style="margin-top:5em">
+                        <div class="col-md-2 col-xs-2 col-sm-2"></div>
+                        <div class="col-md-8 col-xs-8 col-sm-8">
+                            <h2 align="center"> Natale </h2>
+                            <h6 align="center"> Details here </h6>
+							<p align="center" style="margin-top: 2em;"> <img src="https://farm3.staticflickr.com/2873/33535153303_00828eb040_c.jpg" width=100%> </p>
+                        </div>
+                        <div class="col-md-2 col-xs-2 col-sm-2"></div>
+                    </div>
+					                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-xs-2 col-sm-2"></div>
+                        <div class="col-md-8 col-xs-8 col-sm-8">
+                            <h4 align="center"> Ristorante "Il Ciacolon"</h4>
+                            <h6 align="center"> Viale XXV Aprile 7</h6>
+                            <h6 align="center"> 10133 Torino - Italia</h6>
+                            <h6 align="center" style="margin-left:7vmin;"> info@ilciacolon.it &nbsp; | &nbsp; Tel: (+39) 011 6610911 &nbsp; | &nbsp; Cell: (+39) 334 1110039  </h6>
+							<div class="thefork-container" align="center">
+								<a href="https://www.thefork.it/ristorante/il-ciacolon/263701" class="btn" role="button" target="_blank">Prenota su The Fork!</a>
+							</div>
+                            <p><br></p>
+                        </div>
+                        <div class="col-md-2 col-xs-2 col-sm-2"></div>
+                    </div>
+                </div>
+                </div>
+             </div>
+        </div>
+        <!--content-->
+        <div id="footer"><p>&copy;Jos&eacute; de Arcos & Giorgia Grisot </p></div>
+    </div>
+    <!--wrapper-->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+
+	<script>
+	 // DOM ready
+	 $(function() {
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Vai a ..."
+      }).appendTo("#ciaco-nav select");
+
+	   // To make dropdown actually work
+	   // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+      $("#ciaco-nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+
+	 });
+	</script>
+</body>
+
+</html>
