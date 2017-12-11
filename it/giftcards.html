@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55427691-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments)};
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-55427691-2');
+	</script>
+<!-- make a local copy!-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC8fPLLbvl7koZn-KwzMBBVzc75i3xBivM"></script>
+
+    <script>
+        var myCenter = new google.maps.LatLng(45.033768, 7.685966);
+
+        function initialize() {
+            var mapProp = {
+                center: myCenter,
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+            var image = new google.maps.MarkerImage(
+                "../Images/FlagIcons/map_pin_icon.png", new google.maps.Size(71, 71));
+
+            var image = {
+                url: '../Images/FlagIcons/map_pin_icon.png',
+                scaledSize: new
+                google.maps.Size(72, 65)
+            };
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+                icon: image,
+                map: map,
+            });
+
+            marker.setMap(map);
+        }
+        google.maps.event.addDomListener(window, 'load',
+            initialize);
+    </script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../css/ciacola2.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+    <title>Banner</title>
+</head>
+<body>
+    <div class="bgimg-1-gift">
+        <div class="caption">
+            <span class="border" style="line-height:3em;" >Il Ciacolon presenta...</span>
+            <p>
+                <span class="border" style="line-height:3em;" >LE NOSTRE GIFT CARDS!</span>
+            </p>
+
+        </div>
+    </div>
+    <div id="header">
+		<div class="nav">
+			<ul id="ciaco-logo">
+				<li>
+					<a href="../index.html"><img src="../Images/blu_crop.jpg"></a>
+				</li>
+			</ul>
+		</div>
+		<div id="header-line"></div>
+    </div>
+    <div style="position:relative;">
+		<div style="color:#ddd;background-color:#282E34;padding:50px 5vh;text-align:center;">
+			<p align="center">
+			    Hai gi&aacute fatto i regali di Natale? <br>
+			    No? Non hai idee? <br>
+			    Eccone una originale e utile: regala una serata speciale al CIACOLON! <br>
+			    <br>
+			    <strong>Gift card... che idea! </strong> <br>
+			    <br>
+			    Volete regalare una delle nostre gift card da uno, due o quattro cene? <br>
+			    Possiamo personalizzarle nella formula che desiderate ed inviarla anche on line. 
+			    <br>
+			</p>
+			<p align="center">
+				<br>
+				Vuoi saperne di pi&uacute? <br>
+				<a href="./Contatti.html">Scrivici!</a>
+			</p>
+		</div>
+    </div>
+
+	<div class="bgimg-2-banner">
+		<div class="caption"></div>
+	</div>
+	<div style="position:relative;">
+		<div style="padding:30px 0vh;text-align:center;background: linear-gradient(to right, white 0%,white 50%,white 50%,white 100%);">
+			<div class=row>
+				 <div class="col-md-6 col-xs-6 col-sm-6" >
+					<p align="center" style="color:#282E34;">
+                                    <img style="height: 16vh;" src="../Images/logo_Ciacola_banner.png" >
+                                    <br>
+                                    <br>
+                                    <strong>GIO &#45; VEN &#45; SAB </strong> <br>
+                                    Dalle 12,30 alle 14,00
+                                    <br>
+                                    Dalle 19,30 alle 23,00
+                                    <br><br>
+                                    <strong>LUN e MER </strong><br>
+                                    Solo su richiesta (minimo 15 persone)
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                            <p align="center" style="color:#282E34; top: -1em;">
+                                    <img style="height: 16vh;" src="../Images/logo_ciacolon_banner.png" >
+                                    <br>
+                                    <br>
+                                    <strong>MAR &#45; GIO &#45; VEN &#45; SAB </strong> <br>
+                                    Dalle 20,00 alle 22,30
+                                    <br>
+                                    <strong>DOM</strong> <br>
+                                    Dalle 12,30 alle 14,00
+                                    <br><br>
+                                    <strong>LUN e MER </strong><br>
+                                    Solo su richiesta (minimo 15 persone)
+					</p>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div class="bgimg-3-banner">
+		<div class="caption">
+			<span class="border" style="line-height:3em;">VIENI A TROVARCI!</span>
+		</div>
+   </div>
+   <div style="padding: 50px 0vh; color:#ddd;background-color:#282E34;text-align:center;text-align: justify;">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                            <br>
+                           <h4 align="center"> Ristorante "Il Ciacolon"</h4>
+                            <h6 align="center"> Viale XXV Aprile 7</h6>
+                            <h6 align="center"> 10133 Torino - Italia</h6>
+                            <h6 align="center" style="margin-left:7vmin;"> info@ilciacolon.it &nbsp; | &nbsp; Tel: (+39) 011 6610911 &nbsp; | &nbsp; Cell: (+39) 334 1110039  </h6>
+                            <div class="thefork-container" align="center">
+								<a href="https://www.thefork.it/ristorante/il-ciacolon/263701" class="btn" role="button" target="_blank">Prenota su The Fork!</a>
+                            </div>
+                            <br>
+                            <div id="googleMap" style="width:70%;left:15%;height:300px;"></div>
+
+   
+                        </div>
+			<div class="col-md-6 col-xs-6 col-sm-6">
+				<div class="col-md-12 col-xs-12 col-sm-12">
+                                    <br>
+
+                                    <h4 align="center"> Scrivici</h4>
+                                    <br>
+
+												<!-- <form action="mailto:info@ilciacolon.it?subject=Messaggio da ilciacolon.it" method="post" enctype="text/plain" id="commentForm" data-toggle="validator" role="form"> -->
+						    <form action="https://www.enformed.io/x1tbaba" method="POST" id="commentForm" data-toggle="validator" role="form">
+												<!-- <legend>Contact Form</legend> -->
+						    <div class="form-group">
+							<label class="control-label">Nome</label>
+							<div class="controls">
+							    <div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								<input id="name" type="text" class="form-control" name="Nome" placeholder="Name">
+															<input type="hidden" name="*redirect" value="http://www.ilciacolon.it/it/grazie.html" />
+															<input type="hidden" name="*honeypot" />
+															<input type="hidden" name="*subject" value="Messaggio da ilciacolon.it" />
+							    </div>
+							</div>
+						    </div>
+						    <div class="form-group">
+							<label class="control-label">Telefono</label>
+							<div class="controls">
+							    <div class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+								<input id="tel" type="text" class="form-control" name="Tel" placeholder="Telefono" data-error="Il telefono sembra incorretto." required>
+							    </div>
+							    <div class="help-block with-errors"></div>
+							</div>
+						    </div>
+						    <div class="form-group">
+							<label class="control-label">Email</label>
+							<div class="controls">
+							    <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+								<input type="text" class="form-control" id="email" name="email" placeholder="Email" data-error="L'indirizzo email sembra incorretto." required>
+								<input type="hidden" name="*reply" value="email" />
+														</div>
+							    <div class="help-block with-errors"></div>
+							</div>
+						    </div>
+						    <div class="form-group">
+							<label class="control-label">Messaggio</label>
+							<div class="controls">
+							    <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+								<input type="text" id="msg" maxlength="300" name="Messaggio" class="form-control " rows="4" cols="78" placeholder="Lasciaci un messaggio e ti risponderemo al pi&uacute; presto"></textarea>
+							    </div> <span class="help-block with-errors">Fino a 300 caratteri.</span>
+							</div>
+						    </div>
+						    <div class="controls" style="margin: 0px 0px 3em 35%;">
+							<input style="margin-left: 12%;" type="submit" value="Invia">
+						    </div>
+						</form>
+				 </div>
+			</div>
+		</div>
+    </div> 
+</body>
+</html>
