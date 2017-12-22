@@ -34,10 +34,13 @@ min-height: 400px;
 
 /* Banner images */
 .bgimg-1-banner {
-background-image: url("http://www.planwallpaper.com/static/images/Merry_christmas-6.jpg");
+background-image: url("../Images/capodanno.jpg");
 min-height: 100%;
 height: 10vh;
 }
+/* https://assets.sealink.com.au/images/shutterstock_524751166-1dfgfgf.jpg
+http://www.parkhotelcattolica.it/wp-content/uploads/2015/11/offerte-capodanno-cattolica.jpg
+http://www.laprovinciadibiella.it/uploads/spareparts/2017/12/18/pagina_26417/Un-capodanno-fuori-dal-comune-quest-anno-a-Biella-5a375ba4ea2804.jpg*/
 .bgimg-2-banner {
 background-image: url("../Images/banner_combo.png");
 min-height: 500px;
