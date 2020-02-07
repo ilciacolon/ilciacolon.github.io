@@ -478,13 +478,24 @@ label.valid {
 	text-align: center;
 	text-decoration: none;
 	/*takes out the underline when hovering*/
-	
 }
 
 .circle a:hover {
 	color: white;
 	text-shadow: -0.75px 0 #3c359f, 0 0.75px #3c359f, 0.75px 0 #3c359f, 0 -0.75px #3c359f;
 	z-index: 40;
+}
+
+a.blinking {
+    animation:blinkingText 1.7s infinite;
+}
+
+@keyframes blinkingText{
+    0%{     color: #3c359f;    }
+    49%{    color: #3c359f; }
+    60%{    color: white; }
+    80%{    color: #3c359f;  }
+    100%{   color: #3c359f;    }
 }
 
 .menu-button {
@@ -925,9 +936,9 @@ img.hover-shadow {
 
 #TripAdvisorIcon
 {
-	margin-top:-2px;
+	margin-top:-7px;
 	width:53px;
-	height:22px;
+	height:20px;
 }
 
 .container-facebook {
