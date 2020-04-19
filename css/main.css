@@ -244,6 +244,18 @@ body {
 	line-height: 1.5em;	
 }
 
+.MainPage ol {
+	font: 100 18px 'Roboto Reg'; /*font: 100 17px 'EB Garamond', Helvetica, sans-serif;*/
+	font-size:calc(12px + 0.5vw);
+	line-height: 1.5em;	
+}
+
+.MainPage li {
+	font: 100 18px 'Roboto Reg'; /*font: 100 17px 'EB Garamond', Helvetica, sans-serif;*/
+	font-size:calc(12px + 0.5vw);
+	line-height: 1.5em;	
+}
+
 .MainPage a {
 	font: 100 18px 'Roboto Reg';
 	font-size:calc(12px + 0.5vw);
