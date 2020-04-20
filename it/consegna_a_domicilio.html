@@ -1,362 +1,435 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 
-<html>
-<head>
-	<!-- Global Site Tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55427691-2"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments)};
-	  gtag('js', new Date());
+  <html>
+  <head>
+      <!-- Global Site Tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55427691-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
 
-	  gtag('config', 'UA-55427691-2');
-	</script>
+        gtag('config', 'UA-55427691-2');
+      </script>
 
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <meta charset='UTF-8'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
-    <link rel="stylesheet" href="../css/main.css" type="text/css" />
-    <link rel="shortcut icon" href="../Images/FlagIcons/ciacolon_icon.ico">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <meta charset='UTF-8'>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+      <link rel="stylesheet" href="../css/main.css" type="text/css" />
+      <link rel="shortcut icon" href="../Images/FlagIcons/ciacolon_icon.ico">
 
-    <title>Consegna a Domicilio</title>
-</head>
+      <title>Consegna a Domicilio</title>
+  </head>
 
-<body>
-	<div id="wrapper">
-		<div id="header">
-			<div class="nav">
-				<ul id="ciaco-logo">
-					<li>
-						<a href="../index.html"><img src="../Images/il_ciacolon_logo2.jpg"></a>
-					</li>
-				</ul>
-				<ul id="ciaco-nav">
-					<ul class="menu">
-						<li><a href="./la_ciacola.html">La Ciacola</a></li>
-						<li><a href="./Menu.html">Men&uacute;</a></li>
-						<li>						
-							<div class="dropdown">
-							  <button onclick="myFunction()" class="dropbtn">News</button>
-							  <div id="myDropdown" class="dropdown-content">
-								<a href="./Novita_ed_eventi.html">Eventi</a>
-								<!--<a href="./banner_seasonal.html">Capodanno</a>-->
-								<a href="./giftcards.html">Gift cards</a>
-								<a href="./Dicono_di_noi.html" style="border-bottom: 1px solid black;">Dicono di noi</a>
-							  </div>
-							</div>
-						</li>	
-						<li><a href="./La_Storia.html">La Storia</a></li>
-						<!--<li><a href="./Il_Nostro_Chef.html">I Nostri Chef</a></li>-->
-						<li><a href="./consegna_a_domicilio.html">Consegna a Domicilio</a></li>
-						<li><a href="./Galleria.html">Galleria</a></li>
-						<li><a href="./Contatti.html">Contatti</a></li>
-					</ul>
-					<select>
-						<option value="./consegna_a_domicilio.html">Consegna a Domicilio</option> 
-						<option value="./la_ciacola.html">La Ciacola</option> 
-						<option value="./Menu.html">Men&uacute;</option> 
-						<option value="./Novita_ed_eventi.html">Eventi</option>
-						<option value="./banner_seasonal.html">Capodanno</option> 
-						<option value="./giftcards.html">Gift cards</option> 
-						<option value="./Dicono_di_noi.html">Dicono di noi</option> 
-						<option value="./La_Storia.html">La Storia</option> 
-						<option value="./Il_Nostro_Chef.html">I Nostri Chef</option> 
-						<option value="./Galleria.html">Galleria</option>
-						<option value="./Contatti.html">Contatti</option> 
-					</select> 
-				</ul>
-			</div>
-			<div id="header-line"> </div>
-		</div>
+  <body>
+      <div id="wrapper">
+          <div id="header">
+              <div class="nav">
+                  <ul id="ciaco-logo">
+                      <li>
+                          <a href="../index.html"><img src="../Images/il_ciacolon_logo2.jpg"></a>
+                      </li>
+                  </ul>
+                  <ul id="ciaco-nav">
+                      <ul class="menu">
+                          <li><a href="./la_ciacola.html">La Ciacola</a></li>
+                          <li><a href="./Menu.html">Men&uacute;</a></li>
+                          <li>						
+                              <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">News</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <a href="./Novita_ed_eventi.html">Eventi</a>
+                                  <!--<a href="./banner_seasonal.html">Capodanno</a>-->
+                                  <a href="./giftcards.html">Gift cards</a>
+                                  <a href="./Dicono_di_noi.html" style="border-bottom: 1px solid black;">Dicono di noi</a>
+                                </div>
+                              </div>
+                          </li>	
+                          <li><a href="./La_Storia.html">La Storia</a></li>
+                          <!--<li><a href="./Il_Nostro_Chef.html">I Nostri Chef</a></li>-->
+                          <li><a href="./consegna_a_domicilio.html">Consegna a Domicilio</a></li>
+                          <li><a href="./Galleria.html">Galleria</a></li>
+                          <li><a href="./Contatti.html">Contatti</a></li>
+                      </ul>
+                      <select>
+                          <option value="./consegna_a_domicilio.html">Consegna a Domicilio</option> 
+                          <option value="./la_ciacola.html">La Ciacola</option> 
+                          <option value="./Menu.html">Men&uacute;</option> 
+                          <option value="./Novita_ed_eventi.html">Eventi</option>
+                          <option value="./banner_seasonal.html">Capodanno</option> 
+                          <option value="./giftcards.html">Gift cards</option> 
+                          <option value="./Dicono_di_noi.html">Dicono di noi</option> 
+                          <option value="./La_Storia.html">La Storia</option> 
+                          <option value="./Il_Nostro_Chef.html">I Nostri Chef</option> 
+                          <option value="./Galleria.html">Galleria</option>
+                          <option value="./Contatti.html">Contatti</option> 
+                      </select> 
+                  </ul>
+              </div>
+              <div id="header-line"> </div>
+          </div>
 
-		<div id="content">
-			<div class="container-facebook">
-				<div class="row">
-					<div class="col-md-6 col-xs-6 col-sm-6">
-						<iframe id="facebook-buttons"  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Filciacolon&width=95&layout=button&action=like&size=small&show_faces=false&share=true&height=65&appId" width="90" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					</div>
-					<div class="col-md-6 col-xs-6 col-sm-6">
-						<a target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g187855-d743606-Reviews-Il_Ciacolon-Turin_Province_of_Turin_Piedmont.html"><img id="TripAdvisorIcon" src="../Images/TripAdvisorRate.png"/></a>
-					</div>
-				</div>
-			</div>
-			 <div class="MainPage">
-				<p><br></p>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-2 col-xs-2 col-sm-2"></div>
-						<div class="col-md-8 col-xs-8 col-sm-8">
-							<h1 align="center">Men&uacute;... a domicilio!</h1>
-						</div>
-						<div class="col-md-2 col-xs-2 col-sm-2"></div>
-					</div>
+          <div id="content">
+              <div class="container-facebook">
+                  <div class="row">
+                      <div class="col-md-6 col-xs-6 col-sm-6">
+                          <iframe id="facebook-buttons"  src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Filciacolon&width=95&layout=button&action=like&size=small&show_faces=false&share=true&height=65&appId" width="90" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                      </div>
+                      <div class="col-md-6 col-xs-6 col-sm-6">
+                          <a target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g187855-d743606-Reviews-Il_Ciacolon-Turin_Province_of_Turin_Piedmont.html"><img id="TripAdvisorIcon" src="../Images/TripAdvisorRate.png"/></a>
+                      </div>
+                  </div>
+              </div>
+               <div class="MainPage">
+                  <p><br></p>
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-2 col-xs-2 col-sm-2"></div>
+                          <div class="col-md-8 col-xs-8 col-sm-8">
+                              <h1 align="center">Men&uacute;... a domicilio!</h1>
+                          </div>
+                          <div class="col-md-2 col-xs-2 col-sm-2"></div>
+                      </div>
 
-					<div class="row">
-						<div class="col-md-1 col-xs-1 col-sm-1"></div>
-						<div class="col-md-10 col-xs-10 col-sm-10">
-							
-							<div class="col-md-6 col-xs-6 col-sm-6">
-								<img src="../Images/consegna.png" class="img-responsive" style="width=30%">
-							</div>
-							<div class="col-md-6 col-xs-6 col-sm-6">
-								<p align="center">
-									Il Ciacolon si adegua ai tempi e presto potrai tornare a mangiare da noi in tutta sicurezza ma, nel frattempo, se non puoi venire da noi, noi veniamo da te.
-									Abbiamo pensato di proporti alcune delle nostre specialit&aacute; pi&uacute; apprezzate che verranno consegnate direttamente al tuo domicilio. <br><br>
-								</p>
-								<p align="center">
+                      <div class="row">
+                          <div class="col-md-1 col-xs-1 col-sm-1"></div>
+                          <div class="col-md-10 col-xs-10 col-sm-10">
 
-									E’ semplicissimo:
-									<br>
-									<ol type="1" >
-										<li> Fatti ispirare dal nostro men&uacute;</li>
-										<li> Chiamaci e ordina (ordine minimo 25€)</li>
-										<li> Provvedi al pagamento via SATISPAY o Bonifico bancario</li>
-										<li> E… preparati a gustare il tuo pasto</li>
-									</ol>
-								</p>
-							</div>
-						</div>
-						<div class="col-md-1 col-xs-1 col-sm-1"></div>
-					</div>
-					<div class="row" align="center">
-						<h4>Ecco le nostre proposte:</h4>
-					</div>
-					<div class="row">
-						<div class="col-md-1 col-sm-1"></div>
-						<div class="col-md-10 col-sm-10">
-							<div class="MenuOption" align="center">
-								<p class="menu_option_name"> La Carta</p>
-							</div>
-							<div class="Menu" align="center">
-								<p class="menu_formule_name" style="margin-top:0.5em"> Antipasti</p>
-								<div class="row">
-									<div class="col-md-3 col-sm-3"></div>
-									<div class="col-md-8 col-sm-8">
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Baccal&aacute; mantecato</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">7€</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Pollo/pesce in carpione</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">6€</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Pesce finto (pat&eacute; di tonno)</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">5€</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Pur&eacute; al limone</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">5€</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Misto di antipasti <br>
-													<i>Baccal&aacute; Mantecato su crostone di polenta, Pollo/pesce in carpione, Insalata di pollo e sedano croccante, Prugne con pancetta al forno, Pesce finto (pat&eacute; di tonno), Pur&eacute; al limone, Timballo di melanzane, Trancetto di Asiago (12mesi)</i>
-												</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">12€</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-1 col-sm-1"></div>
-								</div>
-								<div class="row">
-									<p class="menu_formule_name" style="margin-top:0.5em">Primi</p>
-									<div class="col-md-3 col-sm-3"></div>
-									<div class="col-md-8 col-sm-8">
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Crespelle ricotta e asparagi su crema di formaggio di Malga</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">9€</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Maltagliati con Rag&uacute; e verdurine dell'orto</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">9€</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Pasta e Fagioli</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">9€</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-1 col-sm-1"></div>
-								</div>
-								<div class="row">
-									<p class="menu_formule_name" style="margin-top:0.5em">Secondi</p>
-									<div class="col-md-3 col-sm-3"></div>
-									<div class="col-md-8 col-sm-8">
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Gulash Trentino con Polenta</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">12€</p>
-											</div>
-										</div>	
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Stracotto di stinco di Maiale al forno con patate o Verdurine alla griglia</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">12€</p>
-											</div>
-										</div>	
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Strudel di Verdura</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">10€</p>
-											</div>
-										</div>	
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Baccal&aacute; alla Vicentina</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">15€</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Fegato alla Veneziana</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">15€</p>
-											</div>
-										</div>	
-									</div>
-									<div class="col-md-1 col-sm-1"></div>
-								</div>
-								<div class="row">
-									<p class="menu_formule_name" style="margin-top:0.5em">Desserts</p>
-									<div class="col-md-3 col-sm-3"></div>
-									<div class="col-md-8 col-sm-8">
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Tiramis&uacute; alle fragole</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">6€</p>
-											</div>
-										</div>	
-										<div class="row">
-											<div class="col-md-9 col-sm-9">
-												<p>Fregolosa</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p style="color:#090274">5€</p>
-											</div>
-										</div>												
-									</div>
-									<div class="col-md-1 col-sm-1"></div>
-								</div>
-						</div>
-						</div>
-					<div class="col-md-1 col-sm-1"></div>
-					</div>
-					<div class="row" style="margin-top: 2em;">
-						<div class="col-md-1 col-sm-1"></div>
-						<div class="col-md-10 col-sm-10">
-							<div class="MenuOption" align="center">
-								<p class="menu_option_name"> Le &nbsp;Formule</p>
-							</div>
-                            <p align="center">Ordinando due men&uacute; avrai la fregolosa in OMAGGIO!</p>
-							<div class="Menu" align="center">
-								<p class="menu_formule_name" style="margin-top:0.5em"> Menú dei &nbsp;Stuzighezi</p>
-								<p class="prezzo">25€</p>
-								<p class="info_menu">Misto di antipasti, un primo<br/> e un dolce.</p>
+                              <div class="col-md-6 col-xs-6 col-sm-6">
+                                  <img src="../Images/consegna.png" class="img-responsive" style="width=30%">
+                              </div>
+                              <div class="col-md-6 col-xs-6 col-sm-6">
+                                  <p align="center">
+                                      Il Ciacolon si adegua ai tempi e presto potrai tornare a mangiare da noi in tutta sicurezza ma, nel frattempo, se non puoi venire da noi, noi veniamo da te.
+                                      Abbiamo pensato di proporti alcune delle nostre specialit&aacute; pi&uacute; apprezzate che verranno consegnate direttamente al tuo domicilio. <br><br>
+                                  </p>
+                                  <p align="center">
 
-								<p class="menu_formule_name"> Menú dei
-									<br/> Bigoli, Brodeti e altre Paste</p>
-								<p class="prezzo" >35€</p>
-								<p class="info_menu"> Misto di antipasti, un primo,<br/> un secondo e un dolce.</p>
-							</div>
-						</div>
-				 
-						<div class="col-md-1 col-sm-1"></div>
-					</div>
-				 	<div class="row" style="margin-top: 2em;">
-						<h4 style="text-align:center"> Costo della consegna 5€</h4>					
-					</div>
-                    <p style="text-align:center"><br> Per permetterci di preparare i vostri pasti abbiamo bisogno di ricevere l’ordine almeno <strong>24 ore</strong> prima della consegna;<br> riceverete la conferma via mail con il riassunto delle vostre richieste e indicazione delle modalità di pagamento.<br> All’atto dell’ordine comunicare eventuali intolleranze e/o allergie.
-					</p>
+                                      E’ semplicissimo:
+                                      <br>
+                                      <ol type="1" >
+                                          <li> Fatti ispirare dal nostro men&uacute;</li>
+                                          <li> Chiamaci e ordina (ordine minimo 25€)</li>
+                                          <li> Provvedi al pagamento via SATISPAY o Bonifico bancario</li>
+                                          <li> E… preparati a gustare il tuo pasto</li>
+                                      </ol>
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="col-md-1 col-xs-1 col-sm-1"></div>
+                      </div>
+                      <div class="row" align="center">
+                          <h4>Ecco le nostre proposte:</h4>
+                      </div>
+                      <div class="row">
+                      		<div class="col-md-1 col-sm-1"></div>
+                         	<div class="col-md-10 col-sm-10">
+                              <div class="MenuOption" align="center">
+                                  <p class="menu_option_name"> La Carta</p>
+                              </div>
+                              <div class="Menu" align="center">
+                                  <p class="menu_formule_name" style="margin-top:0.5em"> Antipasti</p>
+                                  <div class="row">
+                                      <div class="col-md-3 col-sm-3"></div>
+                                      <div class="col-md-8 col-sm-8">
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Baccal&aacute; mantecato</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">7€</p>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Pollo/pesce in carpione</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">6€</p>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Pesce finto (pat&eacute; di tonno)</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">5€</p>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Pur&eacute; al limone</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">5€</p>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Misto di antipasti <br>
+                                                      <i>Baccal&aacute; Mantecato su crostone di polenta, Pollo/pesce in carpione, Insalata di pollo e sedano croccante, Prugne con pancetta al forno, Pesce finto (pat&eacute; di tonno), Pur&eacute; al limone, Timballo di melanzane, Trancetto di Asiago (12mesi)</i>
+                                                  </p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">12€</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-1 col-sm-1"></div>
+                                  </div>
+                                  <div class="row">
+                                      <p class="menu_formule_name" style="margin-top:0.5em">Primi</p>
+                                      <div class="col-md-3 col-sm-3"></div>
+                                      <div class="col-md-8 col-sm-8">
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Crespelle ricotta e asparagi su crema di formaggio di Malga</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">9€</p>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Maltagliati con Rag&uacute; e verdurine dell'orto</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">9€</p>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Pasta e Fagioli</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">9€</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-1 col-sm-1"></div>
+                                  </div>
+                                  <div class="row">
+                                      <p class="menu_formule_name" style="margin-top:0.5em">Secondi</p>
+                                      <div class="col-md-3 col-sm-3"></div>
+                                      <div class="col-md-8 col-sm-8">
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Gulash Trentino con Polenta</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">12€</p>
+                                              </div>
+                                          </div>	
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Stracotto di stinco di Maiale al forno con patate o Verdurine alla griglia</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">12€</p>
+                                              </div>
+                                          </div>	
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Strudel di Verdura</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">10€</p>
+                                              </div>
+                                          </div>	
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Baccal&aacute; alla Vicentina</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">15€</p>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Fegato alla Veneziana</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">15€</p>
+                                              </div>
+                                          </div>	
+                                      </div>
+                                      <div class="col-md-1 col-sm-1"></div>
+                                  </div>
+                                  <div class="row">
+                                      <p class="menu_formule_name" style="margin-top:0.5em">Desserts</p>
+                                      <div class="col-md-3 col-sm-3"></div>
+                                      <div class="col-md-8 col-sm-8">
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Tiramis&uacute; alle fragole</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">6€</p>
+                                              </div>
+                                          </div>	
+                                          <div class="row">
+                                              <div class="col-md-9 col-sm-9">
+                                                  <p>Fregolosa</p>
+                                              </div>
+                                              <div class="col-md-3 col-sm-3">
+                                                  <p style="color:#090274">5€</p>
+                                              </div>
+                                          </div>												
+                                      </div>
+                                      <div class="col-md-1 col-sm-1"></div>
+                                  </div>
+                                  <div class="row" style="margin-top: 3em;">
+                                      <p class="menu_formule_name" style="margin-top:0.5em"> Vini</p>
+                                      <div class="row">
+                                          <div class="col-md-3 col-sm-3"></div>
+                                          <div class="col-md-8 col-sm-8">
+                                              <div class="row">
+                                                  <div class="col-md-9 col-sm-9">
+                                                      <p>Bollicine Cuv&eacute;e Brut</p>
+                                                  </div>
+                                                  <div class="col-md-3 col-sm-3">
+                                                      <p style="color:#090274">12€</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-9 col-sm-9">
+                                                      <p>Prosecco</p>
+                                                  </div>
+                                                  <div class="col-md-3 col-sm-3">
+                                                      <p style="color:#090274">14€</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-9 col-sm-9">
+                                                      <p>Chardonnay</p>
+                                                  </div>
+                                                  <div class="col-md-3 col-sm-3">
+                                                      <p style="color:#090274">12€</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-9 col-sm-9">
+                                                      <p>Sauvignon</p>
+                                                  </div>
+                                                  <div class="col-md-3 col-sm-3">
+                                                      <p style="color:#090274">12€</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-9 col-sm-9">
+                                                      <p>Pinot Grigio</p>
+                                                  </div>
+                                                  <div class="col-md-3 col-sm-3">
+                                                      <p style="color:#090274">12€</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-9 col-sm-9">
+                                                      <p>Cabernet Sauvignon</p>
+                                                  </div>
+                                                  <div class="col-md-3 col-sm-3">
+                                                      <p style="color:#090274">12€</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-9 col-sm-9">
+                                                      <p>Merlot</p>
+                                                  </div>
+                                                  <div class="col-md-3 col-sm-3">
+                                                      <p style="color:#090274">12€</p>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-9 col-sm-9">
+                                                      <p>Valpolicella</p>
+                                                  </div>
+                                                  <div class="col-md-3 col-sm-3">
+                                                      <p style="color:#090274">14€</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-1 col-sm-1"></div>
+                                      </div>
+                                  </div>
+                          	  </div>
+                          </div>
+                      		<div class="col-md-1 col-sm-1"></div>
+                      </div>
+                      <div class="row" style="margin-top: 2em;">
+                          <div class="col-md-1 col-sm-1"></div>
+                          <div class="col-md-10 col-sm-10">
+                              <div class="MenuOption" align="center">
+                                  <p class="menu_option_name"> Le &nbsp;Formule</p>
+                              </div>
+                              <p align="center">Ordinando due men&uacute; avrai la fregolosa in OMAGGIO!</p>
+                              <div class="Menu" align="center">
+                                  <p class="menu_formule_name" style="margin-top:0.5em"> Menú &nbsp;Sfizioso</p>
+                                  <p class="info_menu">Misto di antipasti, un primo e un dolce.</p>
+                                  <p class="prezzo" style="margin-top: -1em; margin-bottom: 2em;">25€</p>
 
-				</div>
 
-			</div>
-		</div>
-		<div id="footer"><p>&copy;Jos&eacute; de Arcos & Giorgia Grisot </p></div>
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
-    <script>
-	/* When the user clicks on the button, 
-	toggle between hiding and showing the dropdown content */
-	function myFunction() {
-		document.getElementById("myDropdown").classList.toggle("show");
-	}
+                                  <p class="menu_formule_name"> Menú &nbsp;Degustazione</p>
+                                  <p class="info_menu"> Misto di antipasti, un primo, un secondo e un dolce.</p>
+                                  <p class="prezzo" style="margin-top: -1em;">35€</p>
+                              </div>
+                          </div>
 
-	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(event) {
-	if (!event.target.matches('.dropbtn')) {
+                          <div class="col-md-1 col-sm-1"></div>
+                      </div>
+                      <div class="row" style="margin-top: 2em;">
+                          <h4 style="text-align:center"> Costo della consegna 5€</h4>					
+                      </div>
+                      <p style="text-align:center"><br> Per permetterci di preparare i vostri pasti abbiamo bisogno di ricevere l’ordine almeno <strong>24 ore</strong> prima della consegna;<br> riceverete la conferma via mail con il riassunto delle vostre richieste e indicazione delle modalità di pagamento.<br> All’atto dell’ordine comunicare eventuali intolleranze e/o allergie.
+                      </p>
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-		  var openDropdown = dropdowns[i];
-		  if (openDropdown.classList.contains('show')) {
-			openDropdown.classList.remove('show');
-		  }
-		}
-	  }
-	}
-	</script>
-	<script>
-	 // DOM ready
-	 $(function() {
-      // Create default option "Go to..."
-      $("<option />", {
-         "selected": "selected",
-         "value"   : "",
-         "text"    : "Vai a ..."
-      }).appendTo("#ciaco-nav select");
+                  </div>
 
-	   // To make dropdown actually work
-	   // To make more unobtrusive: https://css-tricks.com/4064-unobtrusive-page-changer/
-      $("#ciaco-nav select").change(function() {
-        window.location = $(this).find("option:selected").val();
-      });
+              </div>
+          </div>
+          <div id="footer"><p>&copy;Jos&eacute; de Arcos & Giorgia Grisot </p></div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+      <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
 
-	 });
-	</script>
-</body>
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
 
-</html>
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+      <script>
+       // DOM ready
+       $(function() {
+        // Create default option "Go to..."
+        $("<option />", {
+           "selected": "selected",
+           "value"   : "",
+           "text"    : "Vai a ..."
+        }).appendTo("#ciaco-nav select");
+
+         // To make dropdown actually work
+         // To make more unobtrusive: https://css-tricks.com/4064-unobtrusive-page-changer/
+        $("#ciaco-nav select").change(function() {
+          window.location = $(this).find("option:selected").val();
+        });
+
+       });
+      </script>
+  </body>
+
+  </html>
