@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55427691-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments)};
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-55427691-2');
+	</script>
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- You can use open graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url"           content="https://www.ilciacolon.it" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Il Ciacolon" />
+	<meta property="og:description"   content="Ristorante" />
+	<meta property="og:image"         content="https://www.ilciacolon.it/Images/blu2.png"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+<!--    <link rel="stylesheet" href="../jquery.motionCaptcha.0.2.css" type="text/css" />
+--> <link rel="shortcut icon" href="../Images/FlagIcons/ciacolon_icon.ico">
+
+    <title>Grazie</title>
+    <script>
+	 // DOM ready
+	 $(function() {
+
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Vai a..."
+      }).appendTo("#ciaco-nav select");
+
+	   // To make dropdown actually work
+	   // To make more unobtrusive: https://css-tricks.com/4064-unobtrusive-page-changer/
+      $("#ciaco-nav select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+
+	 });
+    </script>
+</head>
+
+<body>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVQj_b9_cgo3mUJ3ZcLD7iQAIWKTtPCsx7uDJrwoS9oHRHLA/viewform?usp=pp_url&entry.2100528350=Giorgia&entry.81287739=03021990" width="640" height="516" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</body>
+
+</html>
